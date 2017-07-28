@@ -1,0 +1,68 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "This file is @generated automatically"
+    ],
+    "content-hash": "0b283da175bb0b7720497aa770f9357a",
+    "packages": [
+        {
+            "name": "pear/cache_lite",
+            "version": "v1.8.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/pear/Cache_Lite.git",
+                "reference": "a3ad6baed101247a3e4a0806113b6f755060f3a3"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/pear/Cache_Lite/zipball/a3ad6baed101247a3e4a0806113b6f755060f3a3",
+                "reference": "a3ad6baed101247a3e4a0806113b6f755060f3a3",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=4.0.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "*"
+            },
+            "type": "library",
+            "autoload": {
+                "classmap": [
+                    "Cache/Lite.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "include-path": [
+                "./"
+            ],
+            "license": [
+                "LGPL"
+            ],
+            "authors": [
+                {
+                    "name": "Markus Tacker",
+                    "homepage": "http://pear.php.net/user/tacker"
+                },
+                {
+                    "name": "Fabien Marty",
+                    "homepage": "http://pear.php.net/user/fab"
+                }
+            ],
+            "description": "Fast and safe little cache system",
+            "homepage": "https://github.com/pear/Cache_Lite",
+            "keywords": [
+                "cache"
+            ],
+            "time": "2016-07-04T05:20:43+00:00"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "stable",
+    "stability-flags": [],
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": [],
+    "platform-dev": []
+}

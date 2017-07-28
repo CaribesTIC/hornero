@@ -1,0 +1,10 @@
+{
+  "autoload": {
+    "psr-4": {
+      "JPH\\": "lib/"
+    }
+  },
+  "require": {
+    "pear/cache_lite": "^1.8"
+  }
+}

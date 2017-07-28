@@ -1,0 +1,54 @@
+[
+    {
+        "name": "pear/cache_lite",
+        "version": "v1.8.0",
+        "version_normalized": "1.8.0.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/pear/Cache_Lite.git",
+            "reference": "a3ad6baed101247a3e4a0806113b6f755060f3a3"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/pear/Cache_Lite/zipball/a3ad6baed101247a3e4a0806113b6f755060f3a3",
+            "reference": "a3ad6baed101247a3e4a0806113b6f755060f3a3",
+            "shasum": ""
+        },
+        "require": {
+            "php": ">=4.0.0"
+        },
+        "require-dev": {
+            "phpunit/phpunit": "*"
+        },
+        "time": "2016-07-04T05:20:43+00:00",
+        "type": "library",
+        "installation-source": "dist",
+        "autoload": {
+            "classmap": [
+                "Cache/Lite.php"
+            ]
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "include-path": [
+            "./"
+        ],
+        "license": [
+            "LGPL"
+        ],
+        "authors": [
+            {
+                "name": "Markus Tacker",
+                "homepage": "http://pear.php.net/user/tacker"
+            },
+            {
+                "name": "Fabien Marty",
+                "homepage": "http://pear.php.net/user/fab"
+            }
+        ],
+        "description": "Fast and safe little cache system",
+        "homepage": "https://github.com/pear/Cache_Lite",
+        "keywords": [
+            "cache"
+        ]
+    }
+]
