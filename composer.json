@@ -1,10 +1,8 @@
 {
   "autoload": {
     "psr-4": {
-      "JPH\\": "lib/"
+      "JPH\\": "lib/",
+      "APP\\": "src/"
     }
-  },
-  "require": {
-    "pear/cache_lite": "^1.8"
   }
 }

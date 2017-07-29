@@ -1,6 +1,7 @@
 <?php
 namespace JPH\Core;
 use JPH\Complement;
+use JPH\Cache\Cache;
 use JPH\Commun\Constant;
 use JPH\Commun\Exceptions;
 /**
@@ -13,12 +14,13 @@ use JPH\Commun\Exceptions;
  */
 
 
-class Configuration extends SetVarAll
+class Configuration extends Cache
 {
 
     public $cache;
     public $file;
     public $class;
+    public $fold;
     public $app;
 
     /**
@@ -29,11 +31,11 @@ class Configuration extends SetVarAll
         $this->app = ucfirst($application);
         define('APP', $this->app); 
         parent::__construct();
-        
+      
 
-        $file = $this->app . 'Configuration.php';
+        $this->file = $this->app . 'Configuration.php';
         $this->class = $this->app . 'Configuration';
-        $fold = Constant::DIR_SRC . $this->app . '/Config/';
+        $this->fold = Constant::DIR_SRC . $this->app . '/'.Constant::APP_ROUTE.'/';
 
 
         // Read configuration variables app.ini
@@ -45,7 +47,6 @@ class Configuration extends SetVarAll
             file_exists($strFileName) ? $objFopen = parse_ini_file($strFileName, true) : die("<strong>Uff:</strong> Se encontro el siguiente error:<ul><li> Clase: ".__CLASS__.'.<br> En el Method: '.__METHOD__.'.<br/> En la Linea: '.__LINE__.'<br/> El achivo: <b>' . $strFileName.'</b>.<br>Nota: <b>Problema de ruta del Archivo no se encuentra.</b></li><ul>');
 
              try {
-                // Comprobar si el email es válido
                 if(empty($objFopen['default'])) {
                     // Lanza una excepción si el email no es válido
                     //throw new Exceptions()->setMessage('HOLLLLLL');
@@ -63,22 +64,25 @@ class Configuration extends SetVarAll
             // Load the configuration values for the default block
              //if(empty($objFopen['default'])){ throw new Exception('Los valores ingresados no son numéricos'); return 0;}
             foreach ($objFopen['default'] AS $key => $value):
-                parent::setCache($key, $value);
+                Cache::set($key, $value);
             endforeach;
 
             // Load the configuration values for the load block
-            foreach ($objFopen[$app] AS $key => $value):
+            foreach ($objFopen[$this->app] AS $key => $value):
                 // VERIFICAR QUE LA CONFIGURACION CUMPLE EL FORMATO
-                parent::setCache($key, $value);
+                Cache::set($key, $value);
             endforeach;
             # code...
         }
 
         // Check if there is a configuration file of the application module.
-        if (!file_exists($file = Constant::DIR_SRC . $app . '/Config/' . $file)) {
-            die(sprintf('The application "%s" does not exist.', $app));
+        $file = Constant::DIR_SRC . $this->app . '/'.Constant::APP_ROUTE.'/' . $this->file;
+        
+        if (!file_exists($file)) {
+            die(sprintf('The application "%s" does not exist.', $this->app));
         }
-
+print_r($file); die('LLEGO');
+        die('Elemento');
 
         switch ($proceso):
         case 'stable':

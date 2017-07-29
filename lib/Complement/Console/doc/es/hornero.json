@@ -1,5 +1,13 @@
 {
     "hornero": {
-        "all": "Variebles comandos:\nApp\n app:nombre Permite crear una aplicacion dentro de tu proyecto"
+        "all": "Variebles comandos:\nApp\n app nombre Permite crear una aplicacion dentro de tu proyecto"
+    },
+    "mensajes": {
+        "App": {
+            "app-create" : "Aplicacion {name} creada exitosamente.\n",
+            "app-existe" : "Aplicacion {name} ya existe.\n",
+            "app-delete" : "Aplicacion {mame} fue eliminada exitosamente.\n"
+        }
     }
+
 }
