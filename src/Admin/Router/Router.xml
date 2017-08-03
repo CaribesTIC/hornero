@@ -2,8 +2,9 @@
 <!-- Router configuration system--> 
 <route> 
     <link> 
-        <name></name> 
+        <name>/home</name> 
         <controller>home</controller> 
         <method>runIndex</method> 
+        <request>GET</request> 
     </link> 
 </route>

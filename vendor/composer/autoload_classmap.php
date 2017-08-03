@@ -6,5 +6,4 @@ $vendorDir = dirname(dirname(__FILE__));
 $baseDir = dirname($vendorDir);
 
 return array(
-    'Cache_Lite' => $vendorDir . '/pear/cache_lite/Cache/Lite.php',
 );

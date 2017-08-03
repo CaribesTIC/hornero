@@ -4,5 +4,8 @@
       "JPH\\": "lib/",
       "APP\\": "src/"
     }
+  },
+  "require": {
+    "league/plates": "^3.3"
   }
 }

@@ -31,12 +31,15 @@ Class Interprete
         die('No se encontro index['.$index.'] sociado a la configuracion.');    
         }
 
-        static function getConfigJson($index,$subIndex){
-                die($index);
+        static public function getConfigJson($index,$subIndex){
+                print $index;
                 $response=self::getConfigMaster($index,$subIndex);
-
-                foreach ($response->$subIndex as $key => $value) {
-                    $resp[][$key]=$value;
+                if(isset($response->$subIndex)){
+                    foreach ($response->$subIndex as $key => $value) {
+                        $resp[][$key]=$value;
+                    }
+                }else{
+                    $resp = $response;
                 }
                 return $resp;
         }
@@ -66,7 +69,7 @@ Class Interprete
          */
         public function showOptions()
         {
-                $fwv=Constant::FW.' '.Constant::VERSION;
+                $fwv=Constant::FW.' - '.Constant::VERSION;
                 $fwv.="\n \n";
                 die($fwv.base64_decode($this->labmenu));
         }
@@ -79,6 +82,12 @@ Class Interprete
         static public function getJsonConfig()
         {
                 $response = file_get_contents(__DIR__.'/doc/es/hornero.json');
+                return $response;
+        }
+
+        static public function getLogoAscii()
+        {
+                $response = file_get_contents(__DIR__.'/doc/banner.txt');
                 return $response;
         }
 
