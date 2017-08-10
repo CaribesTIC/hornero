@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="es-ES">
     <head>
-        <title>JRH+ <?=$this->e($title)?></title>
+        <title>JRH+ <?=$this->section('title')?></title>
 
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -23,9 +23,8 @@
         <link rel="apple-touch-startup-image" href="/jph/img/splash.1024x748.png" media="screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape)" />
 
         <!-- CSS -->
-		<?php $this->insert('section/link') ?>
-        <!-- javascript files -->
- 		<?php $this->insert('section/script') ?>
+	<?php $this->insert('section/link') ?>
+        
     </head>
     <body>
         <!--
@@ -36,15 +35,21 @@
             <div class="column-group">
                 <div id="columnaPrincipal" class="columnaPrincipal all-100 ink-grid">
                     <div class="jph-loading"></div>
-                    kk
+                    
                 </div>
             </div>
-            <?=$this->section('content')?>
+            <div class="all-100 ink-grid">
+                <?=$this->section('content')?>
+            </div>
+            
             <div class="push"></div>
         </main>
         <?php $this->insert('section/footer') ?>
         <?php $this->insert('section/extraDiv') ?>
-        <input type="hidden" id="botonActivo">
-        <input type="hidden" id="complemento" value="ASISTENCIA">
+        
     </body>
+    <!-- javascript files -->
+    <?php $this->insert('section/script') ?>
+    <!-- javascript extra -->
+    <?=$this->section('addJs')?>
 </html>

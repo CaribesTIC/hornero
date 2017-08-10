@@ -13,7 +13,7 @@
                         <li><a href="#"><i class="flaticon-envelope"></i></a></li>-->
 
                         <li>
-                            <a href="#"><i class="flaticon-people"><div id="usuarioLogeado" class="usuarioLogeado push-left"><?php echo $usuarioLogeado ?></div></i></a>
+                            <a href="#"><i class="flaticon-people"><div id="usuarioLogeado" class="usuarioLogeado push-left"><?php //echo $usuarioLogeado ?></div></i></a>
                             <ul id="config_user" class="submenu usuario flyout links">
                                 
                             </ul>
