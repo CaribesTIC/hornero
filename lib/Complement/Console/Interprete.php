@@ -3,7 +3,7 @@ namespace JPH\Complement\Console;
 use JPH\Complement\Console\App;
 use JPH\Commun\Constant;
 
-Class Interprete
+class Interprete
 {
         public $labmenu, $paser, $config;
         function __construct()
@@ -69,9 +69,20 @@ Class Interprete
          */
         public function showOptions()
         {
+                
                 $fwv=Constant::FW.' - '.Constant::VERSION;
                 $fwv.="\n \n";
-                die($fwv.base64_decode($this->labmenu));
+                $item=count($this->labmenu);
+                if($item==1){
+                    $fwv.=base64_decode($this->labmenu);
+                    
+                }else{
+                   
+                    foreach ($this->labmenu as  $value) {
+                        $fwv.=($value);
+                    }
+                }
+                die($fwv);   
         }
 
 

@@ -1,12 +1,21 @@
 {
     "hornero": {
-        "all": "Variebles comandos:\nApp\n app nombre Permite crear una aplicacion dentro de tu proyecto"
+        "all": "Variebles comandos:\n App\n   app:list, Permite listar las aplicacion dentro de tu proyecto\n   app nombre, Permite crear una aplicacion dentro de tu proyecto\n   app nombre public, Permite publicar tus css, js, e img en la parte web\n   app:model nombre-app nombre-modelo, Permite generar el modelo dentro de una aplicacion"
     },
     "mensajes": {
         "App": {
             "app-create" : "Aplicacion {name} creada exitosamente.\n",
             "app-existe" : "Aplicacion {name} ya existe.\n",
-            "app-delete" : "Aplicacion {mame} fue eliminada exitosamente.\n"
+            "app-delete" : "Aplicacion {name} fue eliminada exitosamente.\n",
+            "app-public" : "Aplicacion {name} fue expuesto a la parte web: {file}.",
+            "app:model-create" : "El modelo {modelo}, fue creado dentro de la aplicacion {app}.",
+            "app:model-existe" : "El modelo {modelo}, existe dentro de la aplicacion {app}.",
+            "app:list" : "Aplicacion {name}, se encuentra dentro tu proyecto." 
+        }
+    },
+    "exepciones" : {
+        "Model" : {
+            "app-model-vacia" : "En el modelo <b>{modelo}</b> de la aplicacion <b>{app}</b> hay un error en la definicion de la entidad <b>{entidad}</b> no existe en la base de datos <b>{database}</b>."
         }
     }
 

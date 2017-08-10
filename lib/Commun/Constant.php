@@ -16,6 +16,8 @@ interface Constant
     const DIR_CONFIG = __DIR__.DIRECTORY_SEPARATOR.'..'.DIRECTORY_SEPARATOR.'..'.DIRECTORY_SEPARATOR."config" . DIRECTORY_SEPARATOR;
     const DIR_THEME = __DIR__.DIRECTORY_SEPARATOR.'..'.DIRECTORY_SEPARATOR.'..'.DIRECTORY_SEPARATOR.'theme'.DIRECTORY_SEPARATOR;
 
+    const DIR_WEB = __DIR__.DIRECTORY_SEPARATOR.'..'.DIRECTORY_SEPARATOR.'..'.DIRECTORY_SEPARATOR.'web'.DIRECTORY_SEPARATOR;
+
     const VERSION = "0.8";
     const FW = "Hornero";
 
@@ -26,10 +28,13 @@ interface Constant
     const APP_CONTR = DIRECTORY_SEPARATOR.'Controller'; // Constrolador
     const APP_VIEWS = DIRECTORY_SEPARATOR.'View'; // Responce
     const APP_VHOME = DIRECTORY_SEPARATOR.'View/home'; // Responce
+    const APP_TKEYS = DIRECTORY_SEPARATOR.'extends';
 
     // Request Methods
     const METHOD_GET     = 'GET';
     const METHOD_POST    = 'POST';
+
+
 
 }
 

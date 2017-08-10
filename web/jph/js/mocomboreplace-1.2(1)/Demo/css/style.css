@@ -1,0 +1,188 @@
+#wrap{
+    width: 790px;
+    margin: 0 auto 0;
+}
+
+h2 {
+    display: inline;
+    float: left;
+    width: 100%;
+    text-align: center;
+}
+
+h3 {
+    display: inline;
+    float: left;
+    width: 100%;
+    text-align: center;
+}
+
+pre{
+    float:left;
+    width: 790px;
+    margin: 0 5px;
+}
+
+.row{
+    float:left;
+    width: 790px;
+    margin: 15px 0;
+}
+
+.row pre{
+    float:left;
+    width: 570px;
+    margin: 0 5px;
+}
+
+.row span.head{
+    color: #000099;
+    float: left;
+    margin: 4px 0;
+    text-align: center;
+    text-decoration: underline;
+    width: 570px;
+}
+
+.row .right{
+    float:left;
+    width: 200px;
+    margin: 0 5px;
+}
+
+.row .right span.head{
+    width: 200px;
+}
+
+/** Combo Styling**/
+
+.combo{
+    background: none repeat scroll 0 0 #FFFFFF;
+    border: 1px solid #000099;
+    color: #000099;
+    float: left;
+    height: 20px;
+    list-style: none outside none;
+    margin: 5px;
+    padding: 0;
+    width: 198px;
+}
+
+.combo .value{
+    border-bottom: 1px solid #000099;
+    border-right: 1px solid #000099;
+    cursor: pointer;
+    display: inline;
+    float: left;
+    height: 20px;
+    line-height: 20px;
+    padding: 0 0 0 5px;
+    width: 175px;
+}
+
+.combo .arrow{
+    border-bottom: 1px solid #000099;
+    background: url("../img/arrow_down.png") no-repeat scroll 1px 1px transparent;
+    cursor: pointer;
+    display: inline;
+    float: left;
+    height: 20px;
+    line-height: 20px;
+    width: 17px;
+}
+
+.combo .arrowUp{
+    border-bottom: 1px solid #000099;
+    background: url(../img/arrow_up.png) 1px 1px no-repeat;
+    cursor: pointer;
+    display: inline;
+    float: left;
+    height: 20px;
+    line-height: 20px;
+    width: 17px;
+}
+
+ol{
+    float: left;
+    height: 99px;
+    list-style: none outside none;
+    margin: 0;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    padding: 0;
+    width: 198px;
+}
+
+ol li.group, ol li.group:hover{
+    background: #FFFFFF;
+    color: #000000;
+    float: left;
+    font-style: italic;
+    font-weight: 600;
+    width: 100%;
+}
+
+ol li.option{
+    color: #990000;
+    float: left;
+    font-style: normal;
+    font-weight: 500;
+    text-decoration: none;
+    width: 100%;
+}
+
+ol li.option:hover{
+    background: #990000;
+    color: #FFFFFF;
+    float: left;
+    width: 100%;
+}
+
+ol li.selected{
+    background: #990000;
+    color: #FFFFFF;
+    float: left;
+    width: 100%;
+}
+
+ol li ul{
+    float: left;
+    list-style: none outside none;
+    width: 100%;
+}
+
+ol li ul li{
+    float: left;
+    width: 100%;
+}
+
+ol.disabled li, ol.disabled li:hover{
+    background: #666666;
+    color: #CCCCCC;
+}
+
+.disabled{
+    background: #666666;
+    border: 1px solid #999999;
+    color: #CCCCCC;
+}
+
+.disabled .value{
+    border-right: 1px solid #999999;
+    cursor: default;
+}
+
+.disabled .arrow{
+    cursor: default;
+}
+
+.disabled ol{
+    display: none;
+}
+
+/*** Special style needed since multi and single selects are included in the same page ***/
+
+ol.multiple{
+    border: 1px solid #A9A598;
+    margin: 10px 5px;
+}

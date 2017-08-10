@@ -1,0 +1,55 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+    <head>
+        <link href="../demo/css/style.css" type="text/css" rel="stylesheet" />		
+    </head>
+    <body>
+        <div class="content">
+            <div class="heading">
+                <span class="title">moCombo.replace Documentation</span>
+            </div>
+            <h3>Never Wanted to style a select element? Just to discover you couldn't change the color of the selected item?</h3>
+            <h3>That's why moCombo.replace it's here</h3>
+            <h3>What's moCombo.replace?</h3>
+            <p>
+                moCombo.replace converts any select into a fully styleable (via css) ordered list. 
+                <br />And in the case of the single select element, it even allow you to change the arrow of the drop down menu.
+            </p>
+            <h3>Does it keep events added to the original select?</h3>
+            <p>
+                This version of moCombo, keeps onchange events (even if they where assigned using mootools, with the addEven call).
+            </p>
+            <h3>Does it keep options groups?</h3>
+            <p>
+                Of course it does. thay are converted to an unordered list.
+            </p>						
+            <h3>So what you need?</h3>
+            <p>
+                moCombo.replace need mootools 1.3, it won't work in any previous version.
+            </p>
+            <h3>Which browsers is it compatible with?</h3>
+            <p>
+                It was tested with IE7, IE8, FF2, FF3, Safari 5, Chrome 2 and Opera 11. All under windows.
+            </p>							
+            <h3>How to use it?</h3>
+            <p>
+                just include the mootools 1.3 javascript file, and the moCombo javascript file, then just add this call to your domready.
+            </p>						
+            <pre>
+	new moCombo.replace($$('select.replaceme'));
+            </pre>
+            <p>
+                You can pass just 1 Elements or as many as you want (using css match).
+            </p>
+            <h3>Are there any extra included?</h3>
+            <p>
+                moCombo it's included, moCombo let's you create a new select Element out of nothing. Still, I think it's far more easy to use moCombo.replace
+                <br/> If you need help using moCombo, contacte me marcelo@origoni.com.ar
+            </p>						
+            <hr />
+            <span> 
+                I recommened to check the <a href="http://marcelo.origoni.com.ar/moCombo.replace/demo.html">demo</a>, since I'm not the best of the writers, when comes to write documentation, though, I think I made a descent job here.
+            </span>
+        </div>
+    </body>
+</html>

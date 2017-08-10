@@ -1,0 +1,14 @@
+<script type="text/javascript" src="/jph/js/mootools-core-1.6.0.js"></script>
+<script type="text/javascript" src="/jph/js/mootools-more-1.6.0.js"></script>
+<script type="text/javascript" src="/jph/js/implements.js?v=201705291654"></script>
+<script type="text/javascript" src="/jph/js/ink-all.js?v=201705301021"></script>
+<!--<script type="text/javascript" src="/jph/js/chartist.min.js"></script>-->
+<script type="text/javascript" src="/jph/js/mooltiselect.js"></script>
+<script type="text/javascript" src="/jph/js/combo.js"></script>
+<script type="text/javascript" src="/jph/js/funciones.js?v=201705301046"></script>
+<script type="text/javascript" src="/jph/js/jph_scroll.js?v=201705291654"></script>
+<script type="text/javascript" src="/jph/js/autoload.js?v=201705291654"></script>
+<script type="text/javascript" src="/jph/js/domready.js?v=201705291654"></script>
+<script type="text/javascript" src="/jph/js/erroresMSQL.js"></script>
+<script type="text/javascript" src="/jph/js/caPopup.js?v=201705291654"></script>
+<script type="text/javascript" src="/jph/js/jph_filtro.js?v=201705291654"></script>

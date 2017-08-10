@@ -1,0 +1,112 @@
+@aqua:    #7fdbff;
+@blue:    #0074d9;
+@lime:    #01ff70;
+@navy:    #001f3f;
+@teal:    #39cccc;
+@olive:   #3d9970;
+@green:   #2ecc40;
+@red:     #ff4136;
+@maroon:  #85144b;
+@orange:  #ff851b;
+@purple:  #b10dc9;
+@yellow:  #ffdc00;
+@fuchsia: #f012be;
+@gray:    #aaaaaa;
+@white:   #ffffff;
+@black:   #111111;
+@silver:  #dddddd;
+
+.chk(@color) {
+    background: lighten(@color, 20);
+    border-color: @color;
+    color: @color;
+  &.active {
+    background: darken(@color, 25);
+  }    
+  &:hover {
+    background: lighten(@color, 10);
+  }
+}
+
+.jph-checkbox{
+    border-radius: 6px;
+    border-style: solid;
+    border-width: 3px;
+    cursor: pointer;
+    float:left;
+    height: 20px;
+    width: 20px;
+}
+
+.jph-radio{
+    border-radius: 14px;
+    border-style: solid;
+    border-width: 6px;
+    cursor: pointer;
+    float: left;
+    font-size: 11px;
+    height: 14px;
+    line-height: 14px;
+    text-align: center;
+    width: 14px;
+}
+
+.jph-checkbox i, .jph-radio i{
+    display:none;
+}
+
+.jph-checkbox.checked i, .jph-radio.checked i{
+    display:inline;
+}
+
+.jph-checkbox.aqua, .jph-radio.aqua{
+    .chk(@aqua)
+}
+.jph-checkbox.blue, .jph-radio.blue{
+    .chk(@blue)
+}
+.jph-checkbox.lime, .jph-radio.lime{
+    .chk(@lime)
+}
+.jph-checkbox.navy, .jph-radio.navy{
+    .chk(@navy)
+}
+.jph-checkbox.teal, .jph-radio.teal{
+    .chk(@teal)
+}
+.jph-checkbox.olive, .jph-radio.olive{
+    .chk(@olive)
+}
+.jph-checkbox.green, .jph-radio.green{
+    .chk(@green)
+}
+.jph-checkbox.red, .jph-radio.red{
+    .chk(@red)
+}
+.jph-checkbox.maroon, .jph-radio.maroon{
+    .chk(@maroon)
+}
+.jph-checkbox.orange, .jph-radio.orange{
+    .chk(@orange)
+}
+.jph-checkbox.purple, .jph-radio.purple{
+    .chk(@purple)
+}
+.jph-checkbox.yellow, .jph-radio.yellow{
+    .chk(@yellow)
+}
+.jph-checkbox.fuchsia, .jph-radio.fuchsia{
+    .chk(@fuchsia)
+}
+.jph-checkbox.gray, .jph-radio.gray{
+    .chk(@gray)
+}
+.jph-checkbox.white, .jph-radio.white{
+    .chk(@white)
+}
+.jph-checkbox.black, .jph-radio.black{
+    .chk(@black)
+}
+.jph-checkbox.silver, .jph-radio.silver{
+    .chk(@silver)
+}

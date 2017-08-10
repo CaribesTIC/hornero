@@ -1,0 +1,108 @@
+﻿.body {
+    width:100%;
+    height:100%;
+    color: #fff;
+    font-family: "PT Sans",Helvetica,Arial,sans-serif;
+    text-align: center;
+}
+
+.fondo {
+    background-image:url("../img/fondo_Login.jpg");
+    background-position: inherit;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100%;
+    width: 100%;
+    position: absolute; 
+}   
+
+.tituloPrincipal {
+    background: rgba(0, 0, 0, 0) url("../img/logo.png") repeat scroll 0 0;
+    height: 72px;
+    position: relative;
+    right: 0;
+    text-align: center;
+    width: 194px;
+left: 43%;
+top: 144px;
+}
+
+.tituloLogin {
+    font-size: 25px;
+    font-weight: 100;
+    text-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+    margin-bottom: 25px;
+}
+
+.contentLogin {
+    background: rgba(0, 0, 0, 0.5) none repeat scroll 0 0;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    height: auto;
+    margin: 150px auto;
+    padding: 10px;
+    position: relative;
+    width: 550px;
+}
+
+.contentLogin .fila{
+    height: 50px;
+    margin: 5px auto;
+    text-align: center;
+    width: 200px;
+}
+
+.contentLogin .fila input {
+    background: rgba(0, 0, 0, 0.5) none repeat scroll 0 0;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    float: right;
+    height: 30px;
+    letter-spacing: 1px;
+    margin: 0 auto;
+    padding: 10px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    font-family: Verdana,Arial,Helvetica,sans-serif;
+    font-size: 10px;
+    font-weight: 100;
+    width: 200px;
+}
+
+.contentLogin .botonLogin{
+    background: transparent;
+}
+
+.contentLogin .botonLogin:hover{
+    background: #F47121;
+    color: #FFFFFF;
+}
+
+.contentLogin .fila input:focus {
+    box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.1) inset, 0 2px 7px 0 rgba(0, 0, 0, 0.2);
+    outline: medium none;
+}
+
+.contentLogin .botonLogin {
+    font-size: 18px;
+    height: 37px;
+    line-height: inherit;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 0;
+    width: 270px;
+    color:#fff;
+    font-weight: 100;
+}
+
+.labelError {
+    color: #FFFFFF;
+    float: left;
+    font-size: 13px;
+    font-weight: bold;
+    margin-top: 10px;
+    width: 100%;
+}
+.login
+{
+    background: rgba(0,0,0,0.5);
+}

@@ -73,19 +73,27 @@ class Commun
     {
         $tmp = explode(' ',$texto);
         $res = '';
-        if(count($tmp)==0){
+        if(count($tmp)==0)
+        {
             $res = ucfirst($texto);
-        }else{
-         foreach ($tmp as $key => $value) {
-            if($key==0){
-             $res.=strtolower(self::sanear_string($value));
-         }else{
-             $res.=ucfirst(self::sanear_string($value));
-         }
-     }
- }
- return $res;
-}
+        }
+        else
+        {
+             foreach ($tmp as $key => $value) 
+             {
+                if($key==0)
+                {
+                    $res.=strtolower(self::sanear_string($value));
+                }
+                else
+                {
+                    $res.=ucfirst(self::sanear_string($value));
+                }
+            }
+        }
+        return $res;
+    }
+
     /**
      * Permite cambiar tu texto de extrada en formato upper case
      * @param string $texto, lo que deseas cambiar de formato
@@ -93,18 +101,20 @@ class Commun
      */
     static function upperCase($texto)
     {
-     $tmp = explode(' ',$texto);
-     $res = '';
-     if(count($tmp)==0){
-        $res = ucfirst($texto);
-    }else{
-     foreach ($tmp as $key => $value) {
-         $res.=ucfirst(self::sanear_string($value));
-     }
- }
- return $res;
-
-}
+        $tmp = explode(' ',$texto);
+        $res = '';
+        if(count($tmp)==0)
+        {
+            $res = ucfirst($texto);
+        }
+         else
+        {
+             foreach ($tmp as $key => $value) {
+                 $res.=ucfirst(self::sanear_string($value));
+             }
+        }
+        return $res;
+    }
 
    /**
     * 
@@ -219,14 +229,14 @@ class Commun
      */
     static function  mergeTaps($string,$option)
     {
-        $a = $string; 
-
-        $d = $option;//array($b1, $b2); 
-
-        foreach ($d as $key => $b)
+       
+        $tmp = array(); 
+        // Creamos las reglas en lote
+        foreach ($option as $key => $b)
         { 
-            $result = preg_replace('/{'.$key.'}/', $b, $a); // Fails  
+            $tmp[]='/{'.$key.'}/'; 
         } 
+        $result = preg_replace($tmp, $option, $string); 
 
         return  $result;
     } 

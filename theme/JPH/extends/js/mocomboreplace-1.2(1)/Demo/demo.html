@@ -1,0 +1,327 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+    <head>
+        <link href="./css/style.css" type="text/css" rel="stylesheet" />		
+        <script type="text/javascript" src="../../mootools-core-1.6.0.js"></script>
+        <script type="text/javascript" src="../Source/moCombo.Replace.mootools.js"></script>
+        <script type="text/javascript">
+
+                window.addEvent('domready', function () {
+                    $('multiGrup').addEvent('change', function () {
+                        alert(this.value)
+                    });
+                    new moCombo.replace($$('select.replaceme'));
+                });
+
+        </script>
+    </head>
+    <body>
+        <div id="wrap">
+            <h2>Contact me marcelo@origoni.com.ar</h2>
+            <h3>Javascript Code</h3>
+            <pre>
+	&lt;script type="text/javascript" src="../js/mootools.js"&gt;&lt;/script&gt;
+	&lt;script type="text/javascript" src="../Source/moCombo.Replace.mootools.js"&gt;&lt;/script&gt;
+	&lt;script type="text/javascript"&gt;
+		
+		window.addEvent('domready', function(){
+			$('multiGrup').addEvent('change', function(){alert(this.value)});
+			new moCombo.replace($$('select.replaceme'));
+		});
+		
+	&lt;/script&gt;
+            </pre>
+            <div class="heading">
+
+            </div>
+            <div class="row">
+                <span class="head">Html Code</span>
+                <pre>
+&lt;select name="singleDis" disabled="disabled"&gt;
+	&lt;option value="1"&gt;Option 1&lt;/option&gt;
+	&lt;option value="2"&gt;Option 2&lt;/option&gt;
+	&lt;option value="3"&gt;Option 3&lt;/option&gt;
+	&lt;option value="4"&gt;Option 4&lt;/option&gt;
+	&lt;option value="5"&gt;Option 5&lt;/option&gt;
+	&lt;option value="6"&gt;Option 6&lt;/option&gt;
+	&lt;option value="7"&gt;Option 7&lt;/option&gt;
+	&lt;option value="8"&gt;Option 8&lt;/option&gt;
+	&lt;option value="9"&gt;Option 9&lt;/option&gt;
+&lt;/select&gt;
+                </pre>
+                <div class="right">
+                    <span class="head">Normal Look and Feel</span>
+                    <select name="singleDis" disabled="disabled">
+                        <option value="1">Option 1</option>
+                        <option value="2">Option 2</option>
+                        <option value="3">Option 3</option>
+                        <option value="4">Option 4</option>
+                        <option value="5">Option 5</option>
+                        <option value="6">Option 6</option>
+                        <option value="7">Option 7</option>
+                        <option value="8">Option 8</option>
+                        <option value="9">Option 9</option>
+                    </select>				
+                    <span class="head">moCombo.replaced</span>
+                    <select name="singleDis" disabled="disabled" class="replaceme">
+                        <option value="1">Option 1</option>
+                        <option value="2">Option 2</option>
+                        <option value="3">Option 3</option>
+                        <option value="4">Option 4</option>
+                        <option value="5">Option 5</option>
+                        <option value="6">Option 6</option>
+                        <option value="7">Option 7</option>
+                        <option value="8">Option 8</option>
+                        <option value="9">Option 9</option>
+                    </select>
+                </div>
+            </div>
+            <div class="row">
+                <span class="head">Html Code</span>			
+                <pre>
+&lt;select name="single" onchange="alert(this.value);"&gt;
+	&lt;option value="1"&gt;Option 1&lt;/option&gt;
+	&lt;option value="2"&gt;Option 2&lt;/option&gt;
+	&lt;option value="3"&gt;Option 3&lt;/option&gt;
+	&lt;option value="4"&gt;Option 4&lt;/option&gt;
+	&lt;option value="5"&gt;Option 5&lt;/option&gt;
+	&lt;option value="6"&gt;Option 6&lt;/option&gt;
+	&lt;option value="7"&gt;Option 7&lt;/option&gt;
+	&lt;option value="8"&gt;Option 8&lt;/option&gt;
+	&lt;option value="9"&gt;Option 9&lt;/option&gt;
+&lt;/select&gt;
+                </pre>
+                <div class="right">
+                    <span class="head">Normal Look and Feel</span>
+                    <select name="single" onchange="alert(this.value);">
+                        <option value="1">Option 1</option>
+                        <option value="2">Option 2</option>
+                        <option value="3">Option 3</option>
+                        <option value="4">Option 4</option>
+                        <option value="5">Option 5</option>
+                        <option value="6">Option 6</option>
+                        <option value="7">Option 7</option>
+                        <option value="8">Option 8</option>
+                        <option value="9">Option 9</option>
+                    </select>				
+                    <span class="head">moCombo.replaced</span>				
+                    <select name="single" onchange="alert(this.value);" class="replaceme">
+                        <option value="1">Option 1</option>
+                        <option value="2">Option 2</option>
+                        <option value="3">Option 3</option>
+                        <option value="4">Option 4</option>
+                        <option value="5">Option 5</option>
+                        <option value="6">Option 6</option>
+                        <option value="7">Option 7</option>
+                        <option value="8">Option 8</option>
+                        <option value="9">Option 9</option>
+                    </select>
+                </div>
+            </div>
+            <div class="row">
+                <span class="head">Html Code</span>			
+                <pre>					
+&lt;select name="singleOptGrup"&gt;
+	&lt;optgroup label="Group 1"&gt;
+		&lt;option value="1"&gt;Option 1&lt;/option&gt;
+		&lt;option value="2"&gt;Option 2&lt;/option&gt;
+		&lt;option value="3"&gt;Option 3&lt;/option&gt;
+	&lt;/optgroup&gt;
+	&lt;optgroup label="Group 2"&gt;
+		&lt;option value="4"&gt;Option 4&lt;/option&gt;
+		&lt;option value="5"&gt;Option 5&lt;/option&gt;
+		&lt;option value="6"&gt;Option 6&lt;/option&gt;
+		&lt;option value="7"&gt;Option 7&lt;/option&gt;
+	&lt;/optgroup&gt;
+	&lt;optgroup label="Group 3"&gt;
+		&lt;option value="8"&gt;Option 8&lt;/option&gt;
+		&lt;option value="9"&gt;Option 9&lt;/option&gt;
+	&lt;/optgroup&gt;					
+&lt;/select&gt;
+                </pre>
+                <div class="right">
+                    <span class="head">Normal Look and Feel</span>
+                    <select name="singleOptGrup">
+                        <optgroup label="Group 1">
+                            <option value="1">Option 1</option>
+                            <option value="2">Option 2</option>
+                            <option value="3">Option 3</option>
+                        </optgroup>
+                        <optgroup label="Group 2">
+                            <option value="4">Option 4</option>
+                            <option value="5">Option 5</option>
+                            <option value="6">Option 6</option>
+                            <option value="7">Option 7</option>
+                        </optgroup>
+                        <optgroup label="Group 3">
+                            <option value="8">Option 8</option>
+                            <option value="9">Option 9</option>
+                        </optgroup>					
+                    </select>				
+                    <span class="head">moCombo.replaced</span>					
+                    <select name="singleOptGrup" class="replaceme">
+                        <optgroup label="Group 1">
+                            <option value="1">Option 1</option>
+                            <option value="2">Option 2</option>
+                            <option value="3">Option 3</option>
+                        </optgroup>
+                        <optgroup label="Group 2">
+                            <option value="4">Option 4</option>
+                            <option value="5">Option 5</option>
+                            <option value="6">Option 6</option>
+                            <option value="7">Option 7</option>
+                        </optgroup>
+                        <optgroup label="Group 3">
+                            <option value="8">Option 8</option>
+                            <option value="9">Option 9</option>
+                        </optgroup>					
+                    </select>
+                </div>
+            </div>
+            <div class="row">
+                <span class="head">Html Code</span>
+                <pre>
+&lt;select name="multiDis" disabled="disabled" multiple="multiple"&gt;
+	&lt;optgroup label="Group 1"&gt;
+		&lt;option value="1"&gt;Option 1&lt;/option&gt;
+		&lt;option value="2"&gt;Option 2&lt;/option&gt;
+		&lt;option value="3"&gt;Option 3&lt;/option&gt;
+	&lt;/optgroup&gt;
+	&lt;option value="4"&gt;Option 4&lt;/option&gt;
+	&lt;option value="5"&gt;Option 5&lt;/option&gt;
+	&lt;option value="6"&gt;Option 6&lt;/option&gt;
+	&lt;option value="7"&gt;Option 7&lt;/option&gt;
+	&lt;option value="8"&gt;Option 8&lt;/option&gt;
+	&lt;option value="9"&gt;Option 9&lt;/option&gt;
+&lt;/select&gt;
+                </pre>
+                <div class="right">
+                    <span class="head">Normal Look and Feel</span>
+                    <select name="multiDis" disabled="disabled" multiple="multiple">
+                        <optgroup label="Group 1">
+                            <option value="1">Option 1</option>
+                            <option value="2">Option 2</option>
+                            <option value="3">Option 3</option>
+                        </optgroup>
+                        <option value="4">Option 4</option>
+                        <option value="5">Option 5</option>
+                        <option value="6">Option 6</option>
+                        <option value="7">Option 7</option>
+                        <option value="8">Option 8</option>
+                        <option value="9">Option 9</option>
+                    </select>				
+                    <span class="head">moCombo.replaced</span>				
+                    <select name="multiDis" disabled="disabled" multiple="multiple" class="replaceme">
+                        <optgroup label="Group 1">
+                            <option value="1">Option 1</option>
+                            <option value="2">Option 2</option>
+                            <option value="3">Option 3</option>
+                        </optgroup>
+                        <option value="4">Option 4</option>
+                        <option value="5">Option 5</option>
+                        <option value="6">Option 6</option>
+                        <option value="7">Option 7</option>
+                        <option value="8">Option 8</option>
+                        <option value="9">Option 9</option>
+                    </select>
+                </div>
+            </div>
+            <div class="row">
+                <span class="head">Html Code</span>
+                <pre>
+&lt;select name="multi" multiple="multiple" onchange="alert(this.value);"&gt;
+	&lt;option value="1"&gt;Option 1&lt;/option&gt;
+	&lt;option value="2"&gt;Option 2&lt;/option&gt;
+	&lt;option value="3"&gt;Option 3&lt;/option&gt;
+	&lt;option value="4"&gt;Option 4&lt;/option&gt;
+	&lt;option value="5"&gt;Option 5&lt;/option&gt;
+	&lt;option value="6"&gt;Option 6&lt;/option&gt;
+	&lt;option value="7"&gt;Option 7&lt;/option&gt;
+	&lt;option value="8"&gt;Option 8&lt;/option&gt;
+	&lt;option value="9"&gt;Option 9&lt;/option&gt;
+&lt;/select&gt;
+                </pre>
+                <div class="right">
+                    <span class="head">Normal Look and Feel</span>
+                    <select name="multi" multiple="multiple" onchange="alert(this.value);">
+                        <option value="1">Option 1</option>
+                        <option value="2">Option 2</option>
+                        <option value="3">Option 3</option>
+                        <option value="4">Option 4</option>
+                        <option value="5">Option 5</option>
+                        <option value="6">Option 6</option>
+                        <option value="7">Option 7</option>
+                        <option value="8">Option 8</option>
+                        <option value="9">Option 9</option>
+                    </select>			
+                    <span class="head">moCombo.replaced</span>					
+                    <select name="multi" multiple="multiple" onchange="alert(this.value);" class="replaceme">
+                        <option value="1">Option 1</option>
+                        <option value="2">Option 2</option>
+                        <option value="3">Option 3</option>
+                        <option value="4">Option 4</option>
+                        <option value="5">Option 5</option>
+                        <option value="6">Option 6</option>
+                        <option value="7">Option 7</option>
+                        <option value="8">Option 8</option>
+                        <option value="9">Option 9</option>
+                    </select>				
+                </div>				
+            </div>
+            <div class="row">
+                <span class="head">Html Code</span>
+                <pre>
+&lt;select name="multiOptGrup" multiple="multiple" id="multiGrup"&gt;
+	&lt;optgroup label="Group 1"&gt;
+		&lt;option value="1"&gt;Option 1&lt;/option&gt;
+		&lt;option value="2"&gt;Option 2&lt;/option&gt;
+		&lt;option value="3"&gt;Option 3&lt;/option&gt;
+	&lt;/optgroup&gt;
+	&lt;optgroup label="Group 2"&gt;
+		&lt;option value="4"&gt;Option 4&lt;/option&gt;
+		&lt;option value="5"&gt;Option 5&lt;/option&gt;
+		&lt;option value="6"&gt;Option 6&lt;/option&gt;
+		&lt;option value="7"&gt;Option 7&lt;/option&gt;
+	&lt;/optgroup&gt;
+	&lt;option value="8"&gt;Option 8&lt;/option&gt;
+	&lt;option value="9"&gt;Option 9&lt;/option&gt;
+&lt;/select&gt;
+                </pre>			
+                <div class="right">
+                    <span class="head">Normal Look and Feel</span>
+                    <select name="multiOptGrup" multiple="multiple" id="multiGrup">
+                        <optgroup label="Group 1">
+                            <option value="1">Option 1</option>
+                            <option value="2">Option 2</option>
+                            <option value="3">Option 3</option>
+                        </optgroup>
+                        <optgroup label="Group 2">
+                            <option value="4">Option 4</option>
+                            <option value="5">Option 5</option>
+                            <option value="6">Option 6</option>
+                            <option value="7">Option 7</option>
+                        </optgroup>
+                        <option value="8">Option 8</option>
+                        <option value="9">Option 9</option>
+                    </select>			
+                    <span class="head">moCombo.replaced</span>					
+                    <select name="multiOptGrup" multiple="multiple" id="multiGrup" class="replaceme">
+                        <optgroup label="Group 1">
+                            <option value="1">Option 1</option>
+                            <option value="2">Option 2</option>
+                            <option value="3">Option 3</option>
+                        </optgroup>
+                        <optgroup label="Group 2">
+                            <option value="4">Option 4</option>
+                            <option value="5">Option 5</option>
+                            <option value="6">Option 6</option>
+                            <option value="7">Option 7</option>
+                        </optgroup>
+                        <option value="8">Option 8</option>
+                        <option value="9">Option 9</option>
+                    </select>				
+                </div>				
+            </div>
+        </div>
+    </body>
+</html>

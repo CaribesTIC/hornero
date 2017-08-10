@@ -43,17 +43,17 @@ class Configuration extends Cache
 
         // Read configuration variables app.ini
         $variable = self::fileConfigApp();
-
+        unset($variable['db']);
         foreach ($variable as $strFileName) {
 
             file_exists($strFileName) ? $objFopen = parse_ini_file($strFileName, true) : die("<strong>Uff:</strong> Se encontro el siguiente error:<ul><li> Clase: ".__CLASS__.'.<br> En el Method: '.__METHOD__.'.<br/> En la Linea: '.__LINE__.'<br/> El achivo: <b>' . $strFileName.'</b>.<br>Nota: <b>Problema de ruta del Archivo no se encuentra.</b></li><ul>');
 
-             try {
+            try {
                 if(empty($objFopen['default'])) {
                     // Lanza una excepción si el email no es válido
                     //throw new Exceptions()->setMessage('HOLLLLLL');
                     $exp = new Exceptions();
-                    $exp->setMessage('HOLLLLLL');
+                    $exp->setMessages('HOLLLLLL');
                     throw $exp;
                 }
             }
@@ -116,6 +116,7 @@ class Configuration extends Cache
     public static function fileConfigApp(){
         $variable['app'] = Constant::DIR_CONFIG . "app.ini";
         $variable['view'] = Constant::DIR_CONFIG . "view.ini";
+        $variable['db'] = Constant::DIR_CONFIG . "databases.ini";
         return $variable;
     }
 

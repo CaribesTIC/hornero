@@ -1,0 +1,267 @@
+.jph-checkbox {
+  border-radius: 6px;
+  border-style: solid;
+  border-width: 3px;
+  cursor: pointer;
+  float: left;
+  height: 20px;
+  width: 20px;
+}
+.jph-radio {
+  border-radius: 14px;
+  border-style: solid;
+  border-width: 6px;
+  cursor: pointer;
+  float: left;
+  font-size: 11px;
+  height: 14px;
+  line-height: 14px;
+  text-align: center;
+  width: 14px;
+}
+.jph-checkbox i,
+.jph-radio i {
+  display: none;
+}
+.jph-checkbox.checked i,
+.jph-radio.checked i {
+  display: inline;
+}
+.jph-checkbox.aqua,
+.jph-radio.aqua {
+  background: #e5f8ff;
+  border-color: #7fdbff;
+  color: #7fdbff;
+}
+.jph-checkbox.aqua.active,
+.jph-radio.aqua.active {
+  background: #00b7ff;
+}
+.jph-checkbox.aqua:hover,
+.jph-radio.aqua:hover {
+  background: #b2e9ff;
+}
+.jph-checkbox.blue,
+.jph-radio.blue {
+  background: #40a6ff;
+  border-color: #0074d9;
+  color: #0074d9;
+}
+.jph-checkbox.blue.active,
+.jph-radio.blue.active {
+  background: #00305a;
+}
+.jph-checkbox.blue:hover,
+.jph-radio.blue:hover {
+  background: #0d8eff;
+}
+.jph-checkbox.lime,
+.jph-radio.lime {
+  background: #67ffa9;
+  border-color: #01ff70;
+  color: #01ff70;
+}
+.jph-checkbox.lime.active,
+.jph-radio.lime.active {
+  background: #008138;
+}
+.jph-checkbox.lime:hover,
+.jph-radio.lime:hover {
+  background: #34ff8d;
+}
+.jph-checkbox.navy,
+.jph-radio.navy {
+  background: #0051a5;
+  border-color: #001f3f;
+  color: #001f3f;
+}
+.jph-checkbox.navy.active,
+.jph-radio.navy.active {
+  background: #000000;
+}
+.jph-checkbox.navy:hover,
+.jph-radio.navy:hover {
+  background: #003872;
+}
+.jph-checkbox.teal,
+.jph-radio.teal {
+  background: #8ae1e1;
+  border-color: #39cccc;
+  color: #39cccc;
+}
+.jph-checkbox.teal.active,
+.jph-radio.teal.active {
+  background: #1b6a6a;
+}
+.jph-checkbox.teal:hover,
+.jph-radio.teal:hover {
+  background: #62d6d6;
+}
+.jph-checkbox.olive,
+.jph-radio.olive {
+  background: #74c8a3;
+  border-color: #3d9970;
+  color: #3d9970;
+}
+.jph-checkbox.olive.active,
+.jph-radio.olive.active {
+  background: #193e2d;
+}
+.jph-checkbox.olive:hover,
+.jph-radio.olive:hover {
+  background: #50b98a;
+}
+.jph-checkbox.green,
+.jph-radio.green {
+  background: #7ee289;
+  border-color: #2ecc40;
+  color: #2ecc40;
+}
+.jph-checkbox.green.active,
+.jph-radio.green.active {
+  background: #17641f;
+}
+.jph-checkbox.green:hover,
+.jph-radio.green:hover {
+  background: #54d964;
+}
+.jph-checkbox.red,
+.jph-radio.red {
+  background: #ffa19c;
+  border-color: #ff4136;
+  color: #ff4136;
+}
+.jph-checkbox.red.active,
+.jph-radio.red.active {
+  background: #b50a00;
+}
+.jph-checkbox.red:hover,
+.jph-radio.red:hover {
+  background: #ff7169;
+}
+.jph-checkbox.maroon,
+.jph-radio.maroon {
+  background: #de217d;
+  border-color: #85144b;
+  color: #85144b;
+}
+.jph-checkbox.maroon.active,
+.jph-radio.maroon.active {
+  background: #16030d;
+}
+.jph-checkbox.maroon:hover,
+.jph-radio.maroon:hover {
+  background: #b11b64;
+}
+.jph-checkbox.orange,
+.jph-radio.orange {
+  background: #ffbc81;
+  border-color: #ff851b;
+  color: #ff851b;
+}
+.jph-checkbox.orange.active,
+.jph-radio.orange.active {
+  background: #9b4800;
+}
+.jph-checkbox.orange:hover,
+.jph-radio.orange:hover {
+  background: #ffa04e;
+}
+.jph-checkbox.purple,
+.jph-radio.purple {
+  background: #dd49f3;
+  border-color: #b10dc9;
+  color: #b10dc9;
+}
+.jph-checkbox.purple.active,
+.jph-radio.purple.active {
+  background: #480551;
+}
+.jph-checkbox.purple:hover,
+.jph-radio.purple:hover {
+  background: #d519f0;
+}
+.jph-checkbox.yellow,
+.jph-radio.yellow {
+  background: #ffea66;
+  border-color: #ffdc00;
+  color: #ffdc00;
+}
+.jph-checkbox.yellow.active,
+.jph-radio.yellow.active {
+  background: #806e00;
+}
+.jph-checkbox.yellow:hover,
+.jph-radio.yellow:hover {
+  background: #ffe333;
+}
+.jph-checkbox.fuchsia,
+.jph-radio.fuchsia {
+  background: #f672d8;
+  border-color: #f012be;
+  color: #f012be;
+}
+.jph-checkbox.fuchsia.active,
+.jph-radio.fuchsia.active {
+  background: #7b0861;
+}
+.jph-checkbox.fuchsia:hover,
+.jph-radio.fuchsia:hover {
+  background: #f342cb;
+}
+.jph-checkbox.gray,
+.jph-radio.gray {
+  background: #dddddd;
+  border-color: #aaaaaa;
+  color: #aaaaaa;
+}
+.jph-checkbox.gray.active,
+.jph-radio.gray.active {
+  background: #6a6a6a;
+}
+.jph-checkbox.gray:hover,
+.jph-radio.gray:hover {
+  background: #c3c3c3;
+}
+.jph-checkbox.white,
+.jph-radio.white {
+  background: #ffffff;
+  border-color: #000000;
+  color: #000000;
+}
+.jph-checkbox.white.active,
+.jph-radio.white.active {
+  background: #bfbfbf;
+}
+.jph-checkbox.white:hover,
+.jph-radio.white:hover {
+  background: #dddddd;
+}
+.jph-checkbox.black,
+.jph-radio.black {
+  background: #444444;
+  border-color: #111111;
+  color: #111111;
+}
+.jph-checkbox.black.active,
+.jph-radio.black.active {
+  background: #000000;
+}
+.jph-checkbox.black:hover,
+.jph-radio.black:hover {
+  background: #2b2b2b;
+}
+.jph-checkbox.silver,
+.jph-radio.silver {
+  background: #ffffff;
+  border-color: #dddddd;
+  color: #dddddd;
+}
+.jph-checkbox.silver.active,
+.jph-radio.silver.active {
+  background: #9d9d9d;
+}
+.jph-checkbox.silver:hover,
+.jph-radio.silver:hover {
+  background: #f7f7f7;
+}
