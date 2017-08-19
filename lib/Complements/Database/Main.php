@@ -1,5 +1,5 @@
 <?php
-namespace JPH\Complement\Database;
+namespace JPH\Complements\Database;
 use JPH\Commun\Exceptions;
 use JPH\Commun\Commun;
 
@@ -13,7 +13,7 @@ use JPH\Commun\Commun;
 
 class Main extends Comun
 {
-    use GenerateConexion, ConfigDatabase, Db ;  
+    use GenerateConexion, GenerateTablesConfigs, ConfigDatabase, Db ;
     /**
      * Constructor de la clase integradora que permite hacer funcionar todas las herencias
      */
@@ -40,6 +40,8 @@ class Main extends Comun
             $this->connect($datos);
 
             parent::__construct();
+
+
             
         }catch(Exceptions $e){
             die("Excepción capturada: " . $e->getMessage());

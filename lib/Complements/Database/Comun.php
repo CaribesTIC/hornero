@@ -1,8 +1,8 @@
 <?php
-namespace JPH\Complement\Database;
+namespace JPH\Complements\Database;
 use JPH\Commun\Commun;
 use JPH\Commun\Exceptions;
-use JPH\Complement\Database\Query AS Query;
+use JPH\Complements\Database\Query AS Query;
 /**
  * Representa un modelo generico algo similar a orm, para setiar valores campos y tablas
  */
@@ -184,7 +184,7 @@ class Comun{
      * @param type $query 
      * @return type
      */
-    public function excecuteQuery($query)
+    public function executeQuery($query)
     {
       $this->db->get($query);
       $datos = [];           
@@ -525,6 +525,27 @@ class Comun{
         } else {
             return $key === $this->campoid;
         }
+    }
+
+    /**
+     * Permite visualizar la descripcion de la entidad con las columnas y definicion de la entidad
+     * @param string $entidad, valor de la entidad 
+     * @return objeto $elemento, valores de la entidad
+     */
+    public function showColumns($entidad){
+        $tmp = $this->db->describe($entidad);
+        $elemento=(object)$this->executeQuery($tmp);
+        return $elemento;
+    }
+
+    /**
+     * Permite extraer la estructura de la tabla donde estas conectada que sea diferente a las entidades que necesitamos
+     * @return object $elemento
+     */
+    public function informationschema(){
+        $sql = "SELECT * from INFORMATION_SCHEMA.TABLES";// WHERE TABLE_NAME NOT IN('ho_campos','ho_relacion','ho_entidad', 'ho_campos_type')";
+        $elemento=(object)$this->executeQuery($sql);
+        return $elemento;
     }
 
     private function validarTiposDeDatos() 

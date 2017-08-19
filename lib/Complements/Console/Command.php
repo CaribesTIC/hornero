@@ -1,6 +1,6 @@
 <?php
-namespace JPH\Complement\Console;
-use JPH\Complement\Console\Integrate;
+namespace JPH\Complements\Console;
+use JPH\Complements\Console\Integrate;
 class Command extends Integrate
 {
 	public $term;

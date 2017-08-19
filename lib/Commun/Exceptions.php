@@ -1,6 +1,6 @@
 <?php
 namespace JPH\Commun;
-use JPH\Complement\Console\Interprete;
+use JPH\Complements\Console\Interprete;
 
 /**
  * Clase encargada de gestionar todas las Exceptions del sistema con el objetivo de implementar
@@ -13,8 +13,25 @@ use JPH\Complement\Console\Interprete;
  */
 
 class Exceptions extends \Exception
-{       
+{
         public $message;
+
+
+        public function error($capa,$code) {
+            $message=self::getMsjException($capa,$code);
+                try {
+                    try {
+                        throw new Exceptions($message);
+                    } catch (Exceptions $e) {
+                        // relanzarla
+                        throw $e;
+                    }
+                } catch (Exceptions $e) {
+                    $msj=$e->getMessage();
+                    die($msj);
+                }
+        }
+
         public function setMessages($message){
                 $this->messages = $message;
         }
@@ -28,7 +45,7 @@ class Exceptions extends \Exception
                 .$this->getLine().' en el archivo '
                 .$this->getFile() .': <b>'
                 .$this->getMessage().
-                '</b>'.self::getMMessages(); 
+                '</b>'.self::getMMessages();
                 return $errorMsg;
         }
 
@@ -38,7 +55,7 @@ class Exceptions extends \Exception
          * @param string $subIndex sub indice del mensaje
          * @return string
          */
-        static public function getMsjException($index,$subIndex){ 
+        public function getMsjException($index,$subIndex){
                 $response=Interprete::getConfigMaster('exepciones',$index);
                 return $response->$subIndex;
         }

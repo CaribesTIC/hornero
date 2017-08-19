@@ -1,5 +1,5 @@
 <?php
-namespace JPH\Complement\Console;
+namespace JPH\Complements\Console;
 use JPH\Commun\Exceptions;
 use JPH\Commun\Constant;
 use JPH\Commun\Commun;
@@ -294,7 +294,7 @@ class App extends Exceptions
             fputs($ar, "\n");
             fputs($ar, 'namespace APP\\'.$app.'\\Model;');
             fputs($ar, "\n");
-            fputs($ar, 'use JPH\\Complement\\Database\\Main;');
+            fputs($ar, 'use JPH\\Complements\\Database\\Main;');
             fputs($ar, "\n");                
             fputs($ar, 'use JPH\\Commun\\Commun;');
             fputs($ar, "\n");

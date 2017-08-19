@@ -133,11 +133,12 @@ class Route
         }
 
         static public function validarMethods($meth){
+            $dato = array('post'=>'postty','get'=>'getty');
             $disponible = array(Constant::METHOD_GET, Constant::METHOD_POST);
             if (!in_array($meth, $disponible)) {
                 die('Error en el method soolicitado no definido:'.$meth);
             }
-            return $meth;
+            return $dato[strtolower($meth)];
         }
 
     public function __destruct() {

@@ -1,5 +1,5 @@
 <?php
-namespace JPH\Complement\Console;
+namespace JPH\Complements\Console;
 use JPH\Commun\Exceptions;
 use JPH\Commun\Constant;
 use JPH\Commun\Commun;

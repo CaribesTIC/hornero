@@ -127,7 +127,7 @@ class Commun
    /**
     * 
     */
-   static function compressResponce($html)
+   static function compressResponse($html)
     {
         $search = array('/\>[^\S ]+/s','/[^\S ]+\</s','/(\s)+/s','[\n|\r|\n\r|\t|\0|\x0B]');
         $replace = array('>','<','\\1');

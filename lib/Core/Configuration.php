@@ -1,6 +1,6 @@
 <?php
 namespace JPH\Core;
-use JPH\Complement;
+use JPH\Complements;
 use JPH\Cache\Cache;
 use JPH\Commun\Constant;
 use JPH\Commun\Exceptions;

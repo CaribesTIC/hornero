@@ -1,6 +1,7 @@
 <?php
-namespace JPH\Complement\Database;
+namespace JPH\Complements\Database;
 use JPH\Commun\Commun;
+use JPH\Complements\Database\Query;
 /**
  * Driver que permite hacer la conexion con la base de datos  
  */
@@ -22,7 +23,6 @@ trait Db  {
     public $encoding;
 
     public function connect($datos) {
-        
         $this->host = $datos->host;
         $this->user = $datos->user;
         $this->pass = $datos->pass;
@@ -171,6 +171,13 @@ trait Db  {
         return $this->result;
     }
 
+    public function fetchAll(){
+        while ($row = $this->db->fetch()) {
+            $datos[] = $row;
+        }
+        return $datos;
+    }
+
     public function fetch($resultSet = false) {
         if (!$resultSet) {
             $resultSet = $this->resultSet;
@@ -288,6 +295,7 @@ trait Db  {
         }
     }
 
+
     /**
      * Permite describir la estructura de base de datos
      * @param type $table 
@@ -301,7 +309,7 @@ trait Db  {
             $query = "DESCRIBE personal";
             break;
             case "sql":
-            $q->select("c.COLUMN_NAME as Field,c.DATA_TYPE + '(' + convert(varchar(10), isnull(c.CHARACTER_MAXIMUM_LENGTH, -1)) + ')' as 'Type',c.IS_NULLABLE as 'Null',isnull(LEFT(k.constraint_type, 3), '') as 'Key',c.COLUMN_DEFAULT as 'Default', case co.is_identity when 1 then 'auto_increment' else '' end as Extra");
+             $q->select("c.COLUMN_NAME as Field,c.DATA_TYPE + '(' + convert(varchar(10), isnull(c.CHARACTER_MAXIMUM_LENGTH, -1)) + ')' as 'Type',c.IS_NULLABLE as 'Null',isnull(LEFT(k.constraint_type, 3), '') as 'Key',c.COLUMN_DEFAULT as 'Default', case co.is_identity when 1 then 'auto_increment' else '' end as Extra");
             $q->from("INFORMATION_SCHEMA.COLUMNS as c");
             $q->join("left", "INFORMATION_SCHEMA.CONSTRAINT_COLUMN_USAGE  as kc")->on("kc.COLUMN_NAME = c.COLUMN_NAME and kc.TABLE_NAME = c.TABLE_NAME");
             $q->join("left", "INFORMATION_SCHEMA.TABLE_CONSTRAINTS as k")->on("k.CONSTRAINT_NAME = kc.CONSTRAINT_NAME and k.TABLE_NAME = kc.TABLE_NAME");
@@ -313,7 +321,8 @@ trait Db  {
             break;
         }
         
-        return $query ? $this->get($query) : $query;
+         $query ? $this->get($query) : $query;
+         return $query;
     }
 }
 

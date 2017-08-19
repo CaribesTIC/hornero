@@ -1,6 +1,6 @@
 <?php
-namespace JPH\Complement\Console;
-use JPH\Complement\Console\App;
+namespace JPH\Complements\Console;
+use JPH\Complements\Console\App;
 use JPH\Commun\Constant;
 
 class Interprete

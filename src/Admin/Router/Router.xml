@@ -2,9 +2,39 @@
 <!-- Router configuration system--> 
 <route> 
     <link> 
-        <name>/home</name> 
+        <name>/</name> 
         <controller>home</controller> 
         <method>runIndex</method> 
         <request>GET</request> 
+    </link>
+    <link> 
+        <name>/preConfig</name> 
+        <controller>home</controller> 
+        <method>runPreConfig</method> 
+        <request>GET</request> 
+    </link>
+    <link>
+        <name>/setEntidadesProcesar</name>
+        <controller>home</controller>
+        <method>runSetEntidadesProcesar</method>
+        <request>POST</request>
+    </link>
+    <link> 
+        <name>/configCampos</name> 
+        <controller>home</controller> 
+        <method>runConfigCampos</method> 
+        <request>GET</request> 
+    </link>
+    <link> 
+        <name>/createTablas</name> 
+        <controller>home</controller> 
+        <method>runCreateTablas</method> 
+        <request>GET</request> 
+    </link> 
+    <link> 
+        <name>/procesarForms</name> 
+        <controller>home</controller> 
+        <method>runProcesarForms</method> 
+        <request>POST</request> 
     </link> 
 </route>

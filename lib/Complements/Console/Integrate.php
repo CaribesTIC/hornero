@@ -1,6 +1,6 @@
 <?php
-namespace JPH\Complement\Console;
-use JPH\Complement\Console\App;
+namespace JPH\Complements\Console;
+use JPH\Complements\Console\App;
 
 /**
  * Permite integrar un conjunto de funcionalidades del console de sistema 

@@ -1,5 +1,5 @@
 <?php
-namespace JPH\Complement\Database;
+namespace JPH\Complements\Database;
 use JPH\Core\Configuration;
 use JPH\Commun\Constant;
 
@@ -33,7 +33,7 @@ trait GenerateConexion  {
             // Inicio la escritura en el activo
           fputs($ar, '<?php');
           fputs($ar, "\n");
-          fputs($ar, 'namespace JPH\Complement\Database;');
+          fputs($ar, 'namespace JPH\Complements\Database;');
           fputs($ar, "\n");
           fputs($ar, '/**');
           fputs($ar, "\n");

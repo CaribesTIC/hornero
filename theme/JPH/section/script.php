@@ -9,7 +9,7 @@
 <script type="text/javascript" src="/jph/js/funciones.js?v=<?=$che?>"></script>
 <script type="text/javascript" src="/jph/js/jph_scroll.js?v=<?=$che?>"></script>
 <script type="text/javascript" src="/jph/js/autoload.js?v=<?=$che?>"></script>
-<script type="text/javascript" src="/jph/js/domready.js?v=<?=$che?>"></script>
+<!--script type="text/javascript" src="/jph/js/domready.js?v=<?=$che?>"></script-->
 <script type="text/javascript" src="/jph/js/erroresMSQL.js?v=<?=$che?>"></script>
 <script type="text/javascript" src="/jph/js/caPopup.js?v=<?=$che?>"></script>
 <script type="text/javascript" src="/jph/js/jph_filtro.js?v=<?=$che?>"></script>

@@ -1,10 +1,10 @@
 <?php
-namespace JPH\Complement\Database;
+namespace JPH\Complements\Database;
 /**
  * Configuracion de las conexiones bb Hornero 0.8
  * @propiedad: Hornero 0.8
  * @utor: Gregorio Bolivar <elalconxvii@gmail.com>
- * @created: 10/08/2017
+ * @created: 19/08/2017
  * @version: 1.0
  */ 
 trait ConfigDatabase

@@ -16,7 +16,12 @@
     "exepciones" : {
         "Model" : {
             "app-model-vacia" : "En el modelo <b>{modelo}</b> de la aplicacion <b>{app}</b> hay un error en la definicion de la entidad <b>{entidad}</b> no existe en la base de datos <b>{database}</b>."
+        },
+        "Resquest": {
+            "405-1" : "405 - Method Not Allowed <br> Una petición fue hecha a una URI utilizando un método de solicitud no soportado por dicha URI; por ejemplo, cuando se utiliza GET en un formulario que requiere que los datos sean presentados vía POST, o utilizando PUT en un recurso de solo lectura.",
+            "405-2" : "405 - Method Not Allowed <br> Una petición fue hecha a una URI utilizando un método de solicitud no soportado por dicha URI; por ejemplo, cuando se utiliza POST en un formulario que requiere que los datos sean presentados vía GET, o utilizando PUT en un recurso de solo lectura."
         }
+
     }
 
 }

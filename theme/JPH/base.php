@@ -23,7 +23,8 @@
         <link rel="apple-touch-startup-image" href="/jph/img/splash.1024x748.png" media="screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape)" />
 
         <!-- CSS -->
-	<?php $this->insert('section/link') ?>
+        <?php $this->insert('section/link') ?>
+        <?=$this->section('addCss')?>
         
     </head>
     <body>

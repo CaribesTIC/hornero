@@ -5,4 +5,4 @@
 <link rel="stylesheet" type="text/css" href="/jph/css/colors.css" />
 <link rel="stylesheet" type="text/css" href="/jph/css/chartist.min.css" />
 <link rel="stylesheet" type="text/css" href="/jph/css/mooltiselect.css" />
-<link rel="stylesheet" type="text/css" href="/jph/css/asistencia.css" />
+<link rel="stylesheet" type="text/css" href="/jph/css/asistencia.css"/>

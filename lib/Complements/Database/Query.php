@@ -1,5 +1,5 @@
 <?php
-namespace JPH\Complement\Database;
+namespace JPH\Complements\Database;
 use JPH\Commun\Commun;
 
 class Query {
