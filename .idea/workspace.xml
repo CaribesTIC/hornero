@@ -2,30 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4d8ffa06-177e-4b97-a00d-cce7b1f23526" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/Complement/Console/App.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/Complement/Console/Command.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/Complement/Console/Integrate.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/Complement/Console/Interprete.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/Complement/Console/Symbolico.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/Complement/Console/doc/banner.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/Complement/Console/doc/es/hornero.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/Complement/Database/Comun.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/Complement/Database/ConfigDatabase.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/Complement/Database/ConfigDatabaseTmp.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/Complement/Database/Db.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/Complement/Database/GenerateConexion.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/Complement/Database/Main.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/Complement/Database/Query.php" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/Commun/Commun.php" afterPath="$PROJECT_DIR$/lib/Commun/Commun.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/Commun/Exceptions.php" afterPath="$PROJECT_DIR$/lib/Commun/Exceptions.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/Core/Configuration.php" afterPath="$PROJECT_DIR$/lib/Core/Configuration.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/Router/Route.php" afterPath="$PROJECT_DIR$/lib/Router/Route.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/Router/RouterGenerator.php" afterPath="$PROJECT_DIR$/lib/Router/RouterGenerator.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/Template/Plate.php" afterPath="$PROJECT_DIR$/lib/Template/Plate.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Admin/Router/Router.xml" afterPath="$PROJECT_DIR$/src/Admin/Router/Router.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/theme/JPH/base.php" afterPath="$PROJECT_DIR$/theme/JPH/base.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/theme/JPH/section/link.php" afterPath="$PROJECT_DIR$/theme/JPH/section/link.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/theme/JPH/section/script.php" afterPath="$PROJECT_DIR$/theme/JPH/section/script.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -44,16 +22,6 @@
               <folding>
                 <element signature="e#38#61#0#PHP" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="funciones.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/jph/js/funciones.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3774">
-              <caret line="222" column="20" lean-forward="false" selection-start-line="222" selection-start-column="13" selection-end-line="222" selection-end-column="20" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -99,11 +67,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="preConfig.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="preConfig.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Admin/View/home/preConfig.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="118">
-              <caret line="83" column="29" lean-forward="false" selection-start-line="83" selection-start-column="29" selection-end-line="83" selection-end-column="29" />
+            <state relative-caret-position="133">
+              <caret line="94" column="53" lean-forward="false" selection-start-line="94" selection-start-column="53" selection-end-line="94" selection-end-column="53" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -197,6 +175,7 @@
         <option value="$PROJECT_DIR$/lib/Complements/Database/Main.php" />
         <option value="$PROJECT_DIR$/src/Admin/Model/HomeModel.php" />
         <option value="$PROJECT_DIR$/src/Admin/View/home/preConfig.php" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -241,81 +220,6 @@
             <path>
               <item name="hornero" type="b2602c69:ProjectViewProjectNode" />
               <item name="hornero" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="hornero" type="b2602c69:ProjectViewProjectNode" />
-              <item name="hornero" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="lib" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="hornero" type="b2602c69:ProjectViewProjectNode" />
-              <item name="hornero" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="lib" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Complements" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="hornero" type="b2602c69:ProjectViewProjectNode" />
-              <item name="hornero" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="lib" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Complements" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Database" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="hornero" type="b2602c69:ProjectViewProjectNode" />
-              <item name="hornero" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="lib" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Core" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="hornero" type="b2602c69:ProjectViewProjectNode" />
-              <item name="hornero" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="hornero" type="b2602c69:ProjectViewProjectNode" />
-              <item name="hornero" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Admin" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="hornero" type="b2602c69:ProjectViewProjectNode" />
-              <item name="hornero" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Admin" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Controller" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="hornero" type="b2602c69:ProjectViewProjectNode" />
-              <item name="hornero" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Admin" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="View" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="hornero" type="b2602c69:ProjectViewProjectNode" />
-              <item name="hornero" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Admin" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="View" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="home" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="hornero" type="b2602c69:ProjectViewProjectNode" />
-              <item name="hornero" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="theme" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="hornero" type="b2602c69:ProjectViewProjectNode" />
-              <item name="hornero" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="theme" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="JPH" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="hornero" type="b2602c69:ProjectViewProjectNode" />
-              <item name="hornero" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="theme" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="JPH" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="section" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
           </expand>
           <select />
@@ -368,18 +272,18 @@
       <workItem from="1502915521461" duration="6747000" />
       <workItem from="1502973720017" duration="36481000" />
       <workItem from="1503087113450" duration="3042000" />
-      <workItem from="1503148493195" duration="3837000" />
+      <workItem from="1503148493195" duration="5776000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="50107000" />
+    <option name="totallyTimeSpent" value="52046000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25189108" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.07488654" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -865,8 +769,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Admin/View/home/preConfig.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="118">
-          <caret line="83" column="29" lean-forward="false" selection-start-line="83" selection-start-column="29" selection-end-line="83" selection-end-column="29" />
+        <state relative-caret-position="133">
+          <caret line="94" column="53" lean-forward="false" selection-start-line="94" selection-start-column="53" selection-end-line="94" selection-end-column="53" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
