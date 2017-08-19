@@ -2,7 +2,7 @@
 <?php
 require 'vendor/autoload.php';
 use JPH\Core\Configuration;
-use JPH\Complement\Console\Command;
+use JPH\Complements\Console\Command;
 $ini = new Command();
 $ini->run()
 ?>
