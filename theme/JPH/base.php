@@ -22,8 +22,10 @@
         <link rel="apple-touch-startup-image" href="/jph/img/splash.768x1004.png" media="screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:portrait)" />
         <link rel="apple-touch-startup-image" href="/jph/img/splash.1024x748.png" media="screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape)" />
 
-        <!-- CSS -->
+        <!-- CSS Main-->
         <?php $this->insert('section/link') ?>
+
+        <!-- CSS Extends-->
         <?=$this->section('addCss')?>
         
     </head>
@@ -51,6 +53,7 @@
     </body>
     <!-- javascript files -->
     <?php $this->insert('section/script') ?>
-    <!-- javascript extra -->
-    <?=$this->section('addJs')?>
+
+<!-- javascript extra -->
+<?=$this->section('addJs')?>
 </html>

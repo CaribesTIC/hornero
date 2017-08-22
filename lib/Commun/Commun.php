@@ -122,7 +122,14 @@ class Commun
    static function headerJson()
    {
     header('Content-Type: application/json');
-}
+   }
+
+   static function json($datos)
+   {
+       Commun::headerJson();
+       $json=json_encode($datos);
+       die($json);
+   }
 
    /**
     * 
@@ -239,7 +246,22 @@ class Commun
         $result = preg_replace($tmp, $option, $string); 
 
         return  $result;
-    } 
+    }
+
+    function eliminarDir($carpeta)
+    {
+        foreach(glob($carpeta . "/*") as $archivos_carpeta)
+        {
+            //si es un directorio volvemos a llamar recursivamente
+            if (is_dir($archivos_carpeta))
+                @eliminarDir($archivos_carpeta);
+            else//si es un archivo lo eliminamos
+                @unlink($archivos_carpeta);
+        }
+        //echo ($carpeta); echo "\n";
+        @rmdir($carpeta);
+    }
+
 }
 
 ?>

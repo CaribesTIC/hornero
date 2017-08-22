@@ -1,6 +1,6 @@
 {
     "hornero": {
-        "all": "Variebles comandos:\n App\n   app:list, Permite listar las aplicacion dentro de tu proyecto\n   app nombre, Permite crear una aplicacion dentro de tu proyecto\n   app nombre public, Permite publicar tus css, js, e img en la parte web\n   app:model nombre-app nombre-modelo, Permite generar el modelo dentro de una aplicacion"
+        "all": "Variebles comandos:\n App\n   app:list, Permite listar las aplicacion dentro de tu proyecto\n   app nombre, Permite crear una aplicacion dentro de tu proyecto\n   app nombre public, Permite publicar tus css, js, e img en la parte web\n   app:model nombre-app nombre-modelo, Permite generar el modelo dentro de una aplicacion \n Cache\n   cache:clean, permite limpiar el cache de las aplicaciones   "
     },
     "mensajes": {
         "App": {
@@ -11,6 +11,9 @@
             "app:model-create" : "El modelo {modelo}, fue creado dentro de la aplicacion {app}.",
             "app:model-existe" : "El modelo {modelo}, existe dentro de la aplicacion {app}.",
             "app:list" : "Aplicacion {name}, se encuentra dentro tu proyecto." 
+        },
+        "Cache" : {
+            "cache-clean" : "Cache de la aplicacion {name} fue eliminado exitosamente."
         }
     },
     "exepciones" : {

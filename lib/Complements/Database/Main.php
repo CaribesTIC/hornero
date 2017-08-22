@@ -31,11 +31,11 @@ class Main extends Comun
                 // Conexion enviada por parametro
                  $indx = $a[0];
                  $datos = $this->$indx();
-                 echo "Conexion ".$indx;
+                 //echo "Conexion ".$indx;
             }else{
                 // Conexion por defualt
                 $datos = $this->default();
-                echo "Conexion Default";
+                //echo "Conexion Default";
             }
             $this->connect($datos);
 

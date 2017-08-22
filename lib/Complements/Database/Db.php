@@ -160,7 +160,7 @@ trait Db  {
             break;
         }
 
-            //return $this->result;
+            return $this->result;
     }
 
     public function execute_multi($query) {

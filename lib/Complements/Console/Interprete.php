@@ -79,7 +79,8 @@ class Interprete
                 }else{
                    
                     foreach ($this->labmenu as  $value) {
-                        $fwv.=($value);
+                        $fwv.=base64_decode($value);
+                        $fwv.="\n";
                     }
                 }
                 die($fwv);   

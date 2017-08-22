@@ -63,57 +63,6 @@
 
 
 
-    <?php $this->push('addJs') ?>
-    <script>
-        showSubmit()
-        function allowDrop(ev) {
-            ev.preventDefault();
-        }
-
-        function drag(ev) {
-            ev.dataTransfer.setData("text", ev.target.id);
-            showSubmit()
-
-        }
-
-        function drop(ev) {
-            ev.preventDefault();
-            var data = ev.dataTransfer.getData("text");
-            ev.target.appendChild(document.getElementById(data));
-            showSubmit()
-            eliminarEntidad(data)
-        }
-        function showSubmit(){
-            var elem = $$('#div2 .item').length;
-
-            if(elem>0){
-                $$('#submit').show()
-            }else{
-                $$('#submit').hide()
-            }
-        }
-        /* Funcion que permite eliminar las entidades */
-        function  eliminarEntidad(data) {
-            var elem = $$('#div1 .item#'+data);
-            alert(elem.length);
-        }
-        $$('#enviarDatos').addEvent('click',function (e) {
-            var elem = $$('#div2 .item');
-            var temp = [];
-            for (i = 0; i < elem.length; i++) {
-                Id = elem[i].getProperty('id');
-                temp.push(Id);
-            }
-
-            // create a new Class instance
-            var myRequest = new Request.JSON({
-                url: '/setEntidadesProcesar',
-                method: 'POST',
-                data: {'entidades' : temp},
-                onSuccess: function(dataJson){
-                    //myElement.set('text', responseText);
-                }
-            }).send();
-        });
-    </script>
-    <?php $this->end() ?>
+<?php $this->push('addJs') ?>
+<script type="text/javascript" src="<?=$Cache->get('srcJs')?>/module/preConfig.js"></script>
+<?php $this->end() ?>

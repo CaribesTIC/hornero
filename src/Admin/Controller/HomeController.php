@@ -42,8 +42,14 @@ class HomeController  {
 
  public function runSetEntidadesProcesar($request)
  {
-     $this->home->registrarEntidadesConfig($request);
-
+     if($request->token==md5('delete'))
+     {
+         $result = $this->home->eliminarEntidadesConfig($request->entidad);
+     } elseif ($request->token==md5('create'))
+     {
+         $result = $this->home->registrarEntidadesConfig($request->entidad);
+     }
+     Commun::json($result);
  }
 
  public function runProcesarForms($request){

@@ -14,7 +14,7 @@ class Integrate
 {
 
         /**
-         * Argumentos integrador del console de sistema
+         * Argumentos integrador del console de sistema con varios parametros de respuesta
          * @param string $argv, argumentos del terminal 
          */
         protected function arguments($argv) 
@@ -53,6 +53,12 @@ class Integrate
                     $list = new App();
                     $vist = $list->showApps();
                     $inpre->setValor($vist);
+                }
+                elseif ($v==2 AND $argv[1]=='cache:clean')
+                {
+                    $cache = new Cache();
+                    $msj = $cache->cleanCacheApps();
+                    $inpre->setValor($msj);
                 }
                 else
                 {

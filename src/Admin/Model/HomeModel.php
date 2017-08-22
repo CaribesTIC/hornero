@@ -93,16 +93,18 @@ class HomeModel extends Main
             $t = $this->showColumns($table);//('entidad');
             return $t;
         }
-        public function registrarEntidadesConfig($tables)
+        public function eliminarEntidadesConfig($entidad)
         {
+            $sql = "DELETE FROM ho_entidad WHERE name='".trim($entidad)."'";
+            $this->execute($sql);
+            return true;
+        }
 
-            foreach ($tables->entidades AS $key => $value)
-            {
-                $sql = "INSERT INTO ho_entidad (crud,name) VALUES('true' ,'$value')";
-                $this->execute($sql);
-
-            }
-
+        public function registrarEntidadesConfig($entidad)
+        {
+            $sql = "INSERT INTO ho_entidad (crud,name) VALUES('true' ,'".trim($entidad)."')";
+            $this->execute($sql);
+            return true;
         }
 }
 ?>

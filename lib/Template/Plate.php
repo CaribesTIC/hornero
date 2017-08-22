@@ -64,12 +64,18 @@ class Plate extends Engine
          */
         public function addEnd()
         {
+                self::addExtends();
                 $return=(count($this->item)<0)?$object = array():$this->item;
                 return $return;
         }
 
-        public function pp($obj){
-
+        /**
+         * Description
+         * @return type
+         */
+        public function addExtends(){
+              $this->item['Commun'] = new Commun(); 
+              $this->item['Cache'] = new Cache();
         }
 
 
