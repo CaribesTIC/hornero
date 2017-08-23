@@ -10,64 +10,83 @@ use APP\Admin\Model AS Model;
  * @utor: Gregorio Bolivar <elalconxvii@gmail.com>
  * @created: 04/08/2017
  * @version: 1.0
- */ 
-class HomeController  { 
- public $tpl; 
+ */
+class HomeController  {
+    public $tpl;
 
- public function __construct() 
- { 
-   $this->home = new Model\HomeModel();
-   $this->tpl = new Plate(); 
- } 
- /**
-  * Method encargado de mostrar la pantalla de inicio del sistema
-  * @param request $request
-  * @return html $view  
-  */
- public function runIndex($request){
-    $this->tpl->renders('view::home/home'); 
- }
-
- /**
-  * Ejecuta la precunfiguracion de la base de datos donde extrae los datos del sistema y la base de datos
-  * @param request $request, todo lo que se enviea por el request definido en el router
-  * @return html en la vista
-  */
- public function runPreConfig($request){
-    $schema=$this->home->extraerTodasLasEntidades();
-    $this->tpl->addIni();
-    $this->tpl->add('tablas',$schema);
-    $this->tpl->renders('view::home/preConfig');
- }
-
- public function runSetEntidadesProcesar($request)
- {
-     if($request->token==md5('delete'))
+     public function __construct()
      {
-         $result = $this->home->eliminarEntidadesConfig($request->entidad);
-     } elseif ($request->token==md5('create'))
-     {
-         $result = $this->home->registrarEntidadesConfig($request->entidad);
+       $this->home = new Model\HomeModel();
+       $this->tpl = new Plate();
      }
-     Commun::json($result);
- }
+     /**
+      * Method encargado de mostrar la pantalla de inicio del sistema
+      * @param request $request
+      * @return html $view
+      */
+     public function runIndex($request){
+        $this->tpl->renders('view::home/home');
+     }
 
- public function runProcesarForms($request){
-    Commun::pp($request); 
- }
+     /**
+      * Ejecuta la precunfiguracion de la base de datos donde extrae los datos del sistema y la base de datos
+      * @param request $request, todo lo que se enviea por el request definido en el router
+      * @return html en la vista
+      */
+     public function runPreConfig($request){
+        $schema=$this->home->extraerTodasLasEntidades();
+        $this->tpl->addIni();
+        $this->tpl->add('tablas',$schema);
+        $this->tpl->renders('view::home/preConfig');
+     }
 
- public function runConfigCampos($request) 
- { 
-  $schema=$this->home->extraerLasEntidades();
+     public function runSetEntidadesProcesar($request)
+     {
+         if($request->token==md5('delete'))
+         {
+             $result = $this->home->eliminarEntidadesConfig($request->entidad);
+         } elseif ($request->token==md5('create'))
+         {
+             $result = $this->home->registrarEntidadesConfig($request->entidad);
+         }
+         Commun::json($result);
+     }
 
-  $item = array();
-  foreach ($schema as $key => $value) {
-    $item[$value->entidad] = $this->home->extraerDescribe($value->entidad);
-  }
-  $this->tpl->addIni();
-  $this->tpl->add('schema',$item);
-  $this->tpl->renders('view::home/config_campos');
+     public function runProcesarForms($request){
+        Commun::pp($request);
+     }
+
+     public function runConfigCampos($request)
+     {
+         $item = array();
+         $desc = array();
+
+         $select = $this->home->extraerEntidades();
+
+         foreach ($select['disponibles'] as $key => $value) {
+             $tmp = $this->home->extraerDescribe($value);
+             Commun::pp($tmp);
+             $item[$value->entidad] = $tmp;
+             $temp = array();
+             foreach ($tmp AS $init => $campos){
+                 $temp[]=$campos->Field;
+             }
+             $desc[$value->entidad] = $temp;
+         }
+
+
+          $schema=$this->home->extraerLasEntidades();
+
+
+          foreach ($schema as $key => $value) {
+            $tmp = $this->home->extraerDescribe($value->entidad);
+            $item[$value->entidad] = $tmp;
+          }
+
+          $this->tpl->addIni();
+          $this->tpl->add('select',$desc);
+          $this->tpl->add('schema',$item);
+          $this->tpl->renders('view::home/configCampos');
+    }
 }
-
-} 
 ?>

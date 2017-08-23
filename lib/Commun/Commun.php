@@ -248,6 +248,11 @@ class Commun
         return  $result;
     }
 
+    /**
+     * Methos encardado de eliminar recursivamente un directorio y sus archivos
+     * @param string $carpeta, ruta donde esta la carpeta a eliminar
+     * @author http://aprendizdealquimia.es/blog/?p=231
+    */
     function eliminarDir($carpeta)
     {
         foreach(glob($carpeta . "/*") as $archivos_carpeta)

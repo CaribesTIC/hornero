@@ -18,7 +18,7 @@ interface Constant
 
     const DIR_WEB = __DIR__.DIRECTORY_SEPARATOR.'..'.DIRECTORY_SEPARATOR.'..'.DIRECTORY_SEPARATOR.'web'.DIRECTORY_SEPARATOR;
 
-    const VERSION = "0.8";
+    const VERSION = "1.0";
     const FW = "Hornero";
 
     // Constant necesaria para la generación de la aplicaciones
@@ -26,8 +26,8 @@ interface Constant
     const APP_ROUTE = DIRECTORY_SEPARATOR.'Router'; // Cache
     const APP_MODEL = DIRECTORY_SEPARATOR.'Model'; // Model
     const APP_CONTR = DIRECTORY_SEPARATOR.'Controller'; // Constrolador
-    const APP_VIEWS = DIRECTORY_SEPARATOR.'View'; // Responce
-    const APP_VHOME = DIRECTORY_SEPARATOR.'View/home'; // Responce
+    const APP_VIEWS = DIRECTORY_SEPARATOR.'Templates'; // Responce
+    const APP_VHOME = DIRECTORY_SEPARATOR.'Templates/home'; // Responce
     const APP_TKEYS = DIRECTORY_SEPARATOR.'extends';
 
     // Request Methods

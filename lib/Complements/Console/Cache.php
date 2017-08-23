@@ -30,7 +30,7 @@ class Cache extends Exceptions
         $item = array();
 
         if(count($list)==1){
-            $ruta = $tmp.$list.DIRECTORY_SEPARATOR.'Cache'.DIRECTORY_SEPARATOR.'System';
+            $ruta = $tmp.implode($list).DIRECTORY_SEPARATOR.'Cache'.DIRECTORY_SEPARATOR.'System';
             $Commun->eliminarDir($ruta);
             $item=base64_encode(Commun::mergeTaps($msj,array('name'=>end($list))));
         }else{

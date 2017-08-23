@@ -55,8 +55,14 @@
                 </div>
             </div>
 
-            <div id="submit" class="all-100 space top-space column-group push-right">
-                <input id="enviarDatos"  class="ink-button black" value="Procesar">
+            <div  class="all-100 small-100 space  top-space column-group push-right">
+                <a href="/">
+                    <button class="ink-button  push-right" >Regresar</button>
+                </a>
+                &nbsp;&nbsp;&nbsp;
+                <a href="/configCampos" id="submit">
+                    <button class="ink-button blue push-right" >Siguiente</button>
+                </a>
             </div>
         </div>
     </div>

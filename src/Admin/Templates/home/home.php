@@ -36,9 +36,9 @@ Home del Sistema Hornero
                         
             </div>
 
-            <div class="all-100 small-100 push-right">
+            <div class="all-100 small-100 space  top-space column-group push-right">
                     <a href="/preConfig">
-                        <button class="ink-button black push-right" >Siguiente</button>
+                        <button class="ink-button blue push-right" >Iniciar Proceso</button>
                     </a>
             </div>
         </div>

@@ -15,23 +15,28 @@ $this->layout('base') ?>
                         <?php foreach ($schema as $key => $value) { ?>
                             <li class=''>
                                 <a class='tabs-tab large-100' href='#<?=$key?>' id='tab_<?=$key?>'>
-                                    <font class='large'><?=$key?></font>
+                                    <span class='large'><?=$key?></span>
                                 </a>
                             </li>
                         <?php } ?>
                     </ul>
                     <!-- Now just place your content -->
-                    <?php 
-                    foreach ($schema as $key => $value): ?>
-                        <div id="<?=$key?>" class="tabs-content">
-                          <?php $this->insert('view::home/tabsCampos',['tabla'=>$key,'campos'=>$value]) ?>
-                        </div>
                     <?php
-                    endforeach;
-                    ?>
+                    foreach ($schema as $key => $value)
+                    {?>
+                            <div id="<?=$key?>" class="tabs-content">
+                                <?php $this->insert('view::home/tabsCampos',['tabla'=>$key,'campos'=>$value,'select'=>$select]) ?>
+                            </div>
+                     <?php
+                    } ?>
                 </div>
-                <div>
-                    <input type="submit" name="sub" value="Submit" class="ink-button success" />
+                <div class="large-100 space top-space column-group push-right">
+
+                    <button class="ink-button push-right" id="regresar">Regresar</button>
+
+                    <a href="/preConfig" id="submit ">
+                        <button class="ink-button blue push-right" >Procesar</button>
+                    </a>
                 </div>
             </form>
         </div>
@@ -39,5 +44,5 @@ $this->layout('base') ?>
 </div>
 
 <?php $this->push('addJs') ?>
-    <script type="text/javascript" src="/jph/js/module/config_campos.js"></script>
+    <script type="text/javascript" src="<?php echo $Cache->get('srcJs')?>module/configCampos.js"></script>
 <?php $this->end() ?>

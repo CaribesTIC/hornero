@@ -31,7 +31,7 @@
                     </ul>
                 </div>
                 <div class="all-30 align-right">
-                    <div class="iconomodulo"></div><h5>ATTENDANCE MANAGEMENT</h5>
+                    <div class="iconomodulo"></div><h5>GENERADOR</h5>
                 </div>
             </nav>
         </header>

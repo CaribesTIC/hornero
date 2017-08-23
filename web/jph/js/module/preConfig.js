@@ -1,22 +1,26 @@
 showSubmit()
-function allowDrop(ev) {
+function allowDrop(ev)
+{
     ev.preventDefault();
 }
 
-function drag(ev) {
+function drag(ev)
+{
     ev.dataTransfer.setData("text", ev.target.id);
     showSubmit()
 
 }
 
-function drop(ev) {
+function drop(ev)
+{
     ev.preventDefault();
     var data = ev.dataTransfer.getData("text");
     ev.target.appendChild(document.getElementById(data));
     showSubmit()
     procesarEntidad(data)
 }
-function showSubmit(){
+function showSubmit()
+{
     var elem = $$('#div2 .item').length;
 
     if(elem>0){
@@ -26,7 +30,8 @@ function showSubmit(){
     }
 }
 /* Funcion que permite eliminar las entidades y agregar entidades */
-function  procesarEntidad(data) {
+function  procesarEntidad(data)
+{
     var elem1 = $$('#div1 .item#'+data);
     var elem2 = $$('#div2 .item#'+data);
     var token;
@@ -51,6 +56,3 @@ function  procesarEntidad(data) {
     }).send();
 
 }
-$$('#enviarDatos').addEvent('click',function (e) {
-    window.location.href='/configCampos';
-});

@@ -33,6 +33,19 @@ class HomeModel extends Main
             return $tablas;
         }
 
+        public function extraerEntidades(){
+            $tablas = $this->informationschema();
+            // Definir un arreglo
+            $data = array();
+            foreach($tablas AS $key => $value)
+            {
+                array_push($data,$value->TABLE_NAME);
+            }
+            // Verificar las diferencia de los arreglos y me permite quedarme con las entidades disponibles
+            $tmp['disponibles']=array_diff($data,$this->hcon);
+            return $tmp;
+        }
+
         /**
          * Permite extraer todas la informacion para las entidades que son requerida para la vista de pre configuracion
          * @return array $tmp, informacion de los diferentes datos, disponible, faltante y registrado
@@ -86,9 +99,17 @@ class HomeModel extends Main
 
         public function extraerDescribe($table)
         {
-           //$sql = ' select * from ho_entidad WHERE name NOT IN( SELECT TABLE_NAME from INFORMATION_SCHEMA.TABLES WHERE TABLE_NAME IN(\'ho_campos\',\'ho_relacion\',\'ho_entidad\', \'ho_campos_type\'))'
-            //$t=$this->excecuteQuery('select * from sf_config');
-            //$t=$this->executeQuery('select * from campos');
+           /*
+            * => stdClass Object
+        (
+            [Field] => id
+            [Type] => int(-1)
+            [Null] => NO
+            [Key] => PRI
+            [Default] =>
+            [Extra] => auto_increment
+        )
+             */
 
             $t = $this->showColumns($table);//('entidad');
             return $t;
@@ -102,7 +123,7 @@ class HomeModel extends Main
 
         public function registrarEntidadesConfig($entidad)
         {
-            $sql = "INSERT INTO ho_entidad (crud,name) VALUES('true' ,'".trim($entidad)."')";
+            $sql = "INSERT INTO ho_entidad (crud,name,alias) VALUES('true' ,'".trim($entidad)."','".trim($entidad)."')";
             $this->execute($sql);
             return true;
         }
