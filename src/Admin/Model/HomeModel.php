@@ -42,7 +42,7 @@ class HomeModel extends Main
                 array_push($data,$value->TABLE_NAME);
             }
             // Verificar las diferencia de los arreglos y me permite quedarme con las entidades disponibles
-            $tmp['disponibles']=array_diff($data,$this->hcon);
+            $tmp=array_diff($data,$this->hcon);
             return $tmp;
         }
 

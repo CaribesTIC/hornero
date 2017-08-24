@@ -12,7 +12,7 @@
  		<div class="control prepend-button" role="fieldType">
     		<input type="submit" value="Tipo de campo" class="ink-button">
     		<span>
-    			<select name="type[<?=$tabla?>][<?=$campo->Field?>]"  class="required valor" id="typ-<?=$tabla?>-<?=$campo->Field?>">
+    			<select name="type[<?=$tabla?>][<?=$campo->Field?>]"  class="required valor changeType" id="typ-<?=$tabla?>-<?=$campo->Field?>">
                     <option value="default">Default Input</option>
                     <option value="checkbox">Checkbox</option>
                     <option value="textarea">Textarea</option>
@@ -29,36 +29,29 @@
      <div class="control-group all-50 small-50 tiny-50 typ-<?=$tabla?>-<?=$campo->Field?>">
          <div class="control prepend-button quarter-space" role="fieldType">
              <span class="ink-tooltip ink-label black "
-                   data-tip-text="Clave foranea actual"
+                   data-tip-text="En primer lugar, seleccione el ID para unirse"
                    data-tip-color="black ">
                      <span class="ink-badge label">Related ID</span>
              </span>
 
-             <select name="related_id">dd
-                 <?php foreach ($select AS $entidad => $campos){ \JPH\Commun\Commun::pp($select ); ?>
-                     <option value="<?=$entidad?>|<?=$campos->Field?>"><?=$entidad?> ->; <?=$campos->Field?></option>
-                 <?php } ?>
+             <select name="related_id">
+                 <?php foreach ($select AS $entidad => $campos){ foreach ($campos AS $key => $item){ if($campo->Field===$item){  ?>
+                     <option value="<?=$entidad?>|<?=$item?>"><?=$entidad?> -> <?=$item?></option>
+                 <?php } } } ?>
              </select>
          </div>
      </div>
      <div class="control-group all-50 small-50 tiny-50 typ-<?=$tabla?>-<?=$campo->Field?>">
          <div class="control prepend-button quarter-space" role="fieldType">
              <span class="ink-tooltip ink-label black "
-                   data-tip-text="Entidad referencial "
+                   data-tip-text="Luego el campo que desea en la Entidad referencial "
                    data-tip-color="black ">
                      <span class="ink-badge label">Field</span>
              </span>
              <select name="related_name">
-                 <option value="test_abm|id">test_abm -&gt; id</option>
-                 <option value="test_abm|name">test_abm -&gt; name</option>
-                 <option value="test_abm|last_name">test_abm -&gt; last_name</option>
-                 <option value="test_abm|address">test_abm -&gt; address</option>
-                 <option value="test_abm|telephone">test_abm -&gt; telephone</option>
-                 <option value="test_autos|id_persona">test_autos -&gt; id_persona</option>
-                 <option value="test_autos|id">test_autos -&gt; id</option>
-                 <option value="test_autos|marca">test_autos -&gt; marca</option>
-                 <option value="test_autos|modelo">test_autos -&gt; modelo</option>
-                 <option value="test_autos|anio">test_autos -&gt; anio</option>
+                 <?php foreach ($select AS $entidad => $campos){ foreach ($campos AS $key => $campo){  ?>
+                     <option value="<?=$entidad?>|<?=$campo?>"><?=$entidad?> -> <?=$campo?></option>
+                 <?php } } ?>
              </select>
          </div>
      </div>

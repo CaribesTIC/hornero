@@ -63,6 +63,18 @@
          e.stop();
      }).send();
 
-     $$("#regresar").addEvent('click',function (e) {
+     $$("#regresar").addEvent('click',function (e){
          window.location.href = '/preConfig';
+     })
+
+     $$("select.changeType").addEvent('change', function (e){
+        // Leer el identificador del selector
+         var ids = $(this).getProperty('id');
+        // Leer el valor del selector
+         var val = $(this).getProperty('value');
+         if (val === 'related') {
+             $$('.'+ids).setStyle('display','block');
+         } else {
+             $$('.'+ids).setStyle('display','none');
+         }
      })

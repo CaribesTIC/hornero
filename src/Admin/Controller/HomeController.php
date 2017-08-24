@@ -61,32 +61,30 @@ class HomeController  {
          $item = array();
          $desc = array();
 
+
          $select = $this->home->extraerEntidades();
 
-         foreach ($select['disponibles'] as $key => $value) {
+         foreach ($select as $key => $value) {
              $tmp = $this->home->extraerDescribe($value);
-             Commun::pp($tmp);
-             $item[$value->entidad] = $tmp;
+             $item[$value] = $tmp;
              $temp = array();
              foreach ($tmp AS $init => $campos){
                  $temp[]=$campos->Field;
              }
-             $desc[$value->entidad] = $temp;
+             $desc[$value] = $temp;
          }
 
+         $schema=$this->home->extraerLasEntidades();
 
-          $schema=$this->home->extraerLasEntidades();
-
-
-          foreach ($schema as $key => $value) {
+         foreach ($schema as $key => $value) {
             $tmp = $this->home->extraerDescribe($value->entidad);
             $item[$value->entidad] = $tmp;
-          }
+         }
 
-          $this->tpl->addIni();
-          $this->tpl->add('select',$desc);
-          $this->tpl->add('schema',$item);
-          $this->tpl->renders('view::home/configCampos');
+         $this->tpl->addIni();
+         $this->tpl->add('select',$desc);
+         $this->tpl->add('schema',$item);
+         $this->tpl->renders('view::home/configCampos');
     }
 }
 ?>

@@ -2,29 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4d8ffa06-177e-4b97-a00d-cce7b1f23526" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Admin/View/home/config_campos.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Admin/View/home/formTabsCampos.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Admin/View/home/home.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Admin/View/home/preConfig.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Admin/View/home/tabsCampos.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Demo/Controller/HomeController.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Demo/Router/DemoConfiguration.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Demo/Router/Router.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Demo/View/home/inicio.php" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/app.ini" afterPath="$PROJECT_DIR$/config/app.ini" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/Commun/Commun.php" afterPath="$PROJECT_DIR$/lib/Commun/Commun.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/Commun/Constant.php" afterPath="$PROJECT_DIR$/lib/Commun/Constant.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/Complements/Console/Cache.php" afterPath="$PROJECT_DIR$/lib/Complements/Console/Cache.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/Complements/Database/ConfigDatabase.php" afterPath="$PROJECT_DIR$/lib/Complements/Database/ConfigDatabase.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/Complements/Database/ConfigDatabaseTmp.php" afterPath="$PROJECT_DIR$/lib/Complements/Database/ConfigDatabaseTmp.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Admin/Cache/AdminRouter.class.php" afterPath="$PROJECT_DIR$/src/Admin/Cache/AdminRouter.class.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Admin/Cache/AdminRouter.classTMP.php" afterPath="$PROJECT_DIR$/src/Admin/Cache/AdminRouter.classTMP.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Admin/Controller/HomeController.php" afterPath="$PROJECT_DIR$/src/Admin/Controller/HomeController.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Admin/Model/HomeModel.php" afterPath="$PROJECT_DIR$/src/Admin/Model/HomeModel.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/theme/JPH/base.php" afterPath="$PROJECT_DIR$/theme/JPH/base.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/theme/JPH/extends/js/module/preConfig.js" afterPath="$PROJECT_DIR$/theme/JPH/extends/js/module/preConfig.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/theme/JPH/section/header.php" afterPath="$PROJECT_DIR$/theme/JPH/section/header.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Admin/Templates/home/formTabsCampos.php" afterPath="$PROJECT_DIR$/src/Admin/Templates/home/formTabsCampos.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/jph/js/module/configCampos.js" afterPath="$PROJECT_DIR$/web/jph/js/module/configCampos.js" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -38,8 +24,8 @@
       <file leaf-file-name="HomeController.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Admin/Controller/HomeController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="75" column="0" lean-forward="false" selection-start-line="75" selection-start-column="0" selection-end-line="75" selection-end-column="0" />
+            <state relative-caret-position="475">
+              <caret line="86" column="9" lean-forward="false" selection-start-line="86" selection-start-column="9" selection-end-line="86" selection-end-column="9" />
               <folding>
                 <element signature="e#38#61#0#PHP" expanded="true" />
               </folding>
@@ -47,7 +33,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Cache.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Cache.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lib/Complements/Console/Cache.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="260">
@@ -80,22 +66,19 @@
       <file leaf-file-name="formTabsCampos.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Admin/Templates/home/formTabsCampos.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="37" column="96" lean-forward="false" selection-start-line="37" selection-start-column="96" selection-end-line="37" selection-end-column="96" />
-              <folding>
-                <element signature="n#select#0;n#div#0;n#div#3;n#div#0;n#!!top" expanded="false" />
-                <element signature="e#2816#2820#0#HTML" expanded="true" />
-                <element signature="e#2890#2894#0#HTML" expanded="true" />
-                <element signature="e#2971#2975#0#HTML" expanded="true" />
-                <element signature="e#3055#3059#0#HTML" expanded="true" />
-                <element signature="e#3139#3143#0#HTML" expanded="true" />
-                <element signature="e#3230#3234#0#HTML" expanded="true" />
-                <element signature="e#3314#3318#0#HTML" expanded="true" />
-                <element signature="e#3393#3397#0#HTML" expanded="true" />
-                <element signature="e#3476#3480#0#HTML" expanded="true" />
-                <element signature="e#3558#3562#0#HTML" expanded="true" />
-                <marker date="1503512967266" expanded="true" signature="2199:2200" ph="&gt;" />
-              </folding>
+            <state relative-caret-position="306">
+              <caret line="36" column="38" lean-forward="false" selection-start-line="36" selection-start-column="38" selection-end-line="36" selection-end-column="38" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="configCampos.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/web/jph/js/module/configCampos.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="424">
+              <caret line="75" column="53" lean-forward="true" selection-start-line="75" selection-start-column="53" selection-end-line="75" selection-end-column="53" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -113,20 +96,20 @@
       <file leaf-file-name="HomeModel.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Admin/Model/HomeModel.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="393">
-              <caret line="45" column="23" lean-forward="false" selection-start-line="45" selection-start-column="23" selection-end-line="45" selection-end-column="23" />
+            <state relative-caret-position="339">
+              <caret line="44" column="16" lean-forward="false" selection-start-line="44" selection-start-column="16" selection-end-line="44" selection-end-column="16" />
               <folding>
                 <element signature="e#33#67#0#PHP" expanded="true" />
-                <marker date="1503513607485" expanded="true" signature="1036:1221" ph="SELECT name ho_entidad" />
-                <marker date="1503513607485" expanded="true" signature="1094:1220" ph="SELECT TABLE... TABLES" />
-                <marker date="1503513607485" expanded="true" signature="2793:2978" ph="SELECT * fro... ho_entidad" />
-                <marker date="1503513607485" expanded="true" signature="2793:3025" ph="SELECT * fro... ho_entidad" />
-                <marker date="1503513607485" expanded="true" signature="2799:2978" ph="select * fro... ho_entidad" />
-                <marker date="1503513607485" expanded="true" signature="2851:2977" ph="SELECT TABLE... TABLES" />
-                <marker date="1503513607485" expanded="true" signature="4674:4709" ph="DELETE FROM " />
-                <marker date="1503513607485" expanded="true" signature="4674:4728" ph="DELETE FROM " />
-                <marker date="1503513607485" expanded="true" signature="4890:4945" ph="INSERT INTO ho_entidad... " />
-                <marker date="1503513607485" expanded="true" signature="4890:4988" ph="INSERT INTO ho_entidad... " />
+                <marker date="1503517267997" expanded="true" signature="1036:1221" ph="SELECT name ho_entidad" />
+                <marker date="1503517267997" expanded="true" signature="1094:1220" ph="SELECT TABLE... TABLES" />
+                <marker date="1503517267997" expanded="true" signature="2778:2963" ph="SELECT * fro... ho_entidad" />
+                <marker date="1503517267997" expanded="true" signature="2778:3010" ph="SELECT * fro... ho_entidad" />
+                <marker date="1503517267997" expanded="true" signature="2784:2963" ph="select * fro... ho_entidad" />
+                <marker date="1503517267997" expanded="true" signature="2836:2962" ph="SELECT TABLE... TABLES" />
+                <marker date="1503517267997" expanded="true" signature="4659:4694" ph="DELETE FROM " />
+                <marker date="1503517267997" expanded="true" signature="4659:4713" ph="DELETE FROM " />
+                <marker date="1503517267997" expanded="true" signature="4875:4930" ph="INSERT INTO ho_entidad... " />
+                <marker date="1503517267997" expanded="true" signature="4875:4973" ph="INSERT INTO ho_entidad... " />
               </folding>
             </state>
           </provider>
@@ -147,16 +130,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
               <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="configCampos.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/jph/js/module/configCampos.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="257">
-              <caret line="65" column="52" lean-forward="false" selection-start-line="65" selection-start-column="52" selection-end-line="65" selection-end-column="52" />
               <folding />
             </state>
           </provider>
@@ -219,13 +192,13 @@
         <option value="$PROJECT_DIR$/src/Admin/View/home/preConfig.php" />
         <option value="$PROJECT_DIR$/src/Admin/View/home/config_campos.php" />
         <option value="$PROJECT_DIR$/lib/Commun/Constant.php" />
-        <option value="$PROJECT_DIR$/web/jph/js/module/configCampos.js" />
         <option value="$PROJECT_DIR$/src/Admin/Templates/home/configCampos.php" />
         <option value="$PROJECT_DIR$/src/Admin/Templates/home/tabsCampos.php" />
-        <option value="$PROJECT_DIR$/src/Admin/Templates/home/formTabsCampos.php" />
+        <option value="$PROJECT_DIR$/lib/Complements/Console/Cache.php" />
         <option value="$PROJECT_DIR$/src/Admin/Model/HomeModel.php" />
         <option value="$PROJECT_DIR$/src/Admin/Controller/HomeController.php" />
-        <option value="$PROJECT_DIR$/lib/Complements/Console/Cache.php" />
+        <option value="$PROJECT_DIR$/src/Admin/Templates/home/formTabsCampos.php" />
+        <option value="$PROJECT_DIR$/web/jph/js/module/configCampos.js" />
       </list>
     </option>
   </component>
@@ -437,17 +410,18 @@
       <workItem from="1502915521461" duration="6747000" />
       <workItem from="1502973720017" duration="36481000" />
       <workItem from="1503087113450" duration="3042000" />
-      <workItem from="1503148493195" duration="58651000" />
+      <workItem from="1503148493195" duration="66299000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="104921000" />
+    <option name="totallyTimeSpent" value="112569000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21255673" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21255673" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -855,14 +829,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/jph/js/module/configCampos.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="257">
-          <caret line="65" column="52" lean-forward="false" selection-start-line="65" selection-start-column="52" selection-end-line="65" selection-end-column="52" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Admin/Templates/home/configCampos.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="254">
@@ -871,44 +837,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Admin/Templates/home/tabsCampos.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="26" column="118" lean-forward="false" selection-start-line="26" selection-start-column="118" selection-end-line="26" selection-end-column="118" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Admin/Templates/home/formTabsCampos.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="37" column="96" lean-forward="false" selection-start-line="37" selection-start-column="96" selection-end-line="37" selection-end-column="96" />
-          <folding>
-            <element signature="n#select#0;n#div#0;n#div#3;n#div#0;n#!!top" expanded="false" />
-            <element signature="e#2816#2820#0#HTML" expanded="true" />
-            <element signature="e#2890#2894#0#HTML" expanded="true" />
-            <element signature="e#2971#2975#0#HTML" expanded="true" />
-            <element signature="e#3055#3059#0#HTML" expanded="true" />
-            <element signature="e#3139#3143#0#HTML" expanded="true" />
-            <element signature="e#3230#3234#0#HTML" expanded="true" />
-            <element signature="e#3314#3318#0#HTML" expanded="true" />
-            <element signature="e#3393#3397#0#HTML" expanded="true" />
-            <element signature="e#3476#3480#0#HTML" expanded="true" />
-            <element signature="e#3558#3562#0#HTML" expanded="true" />
-            <marker date="1503512967266" expanded="true" signature="2199:2200" ph="&gt;" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Admin/Router/AdminConfiguration.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Admin/Model/Relacion.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -924,40 +853,72 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/lib/Complements/Console/Cache.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="260">
+          <caret line="32" column="97" lean-forward="false" selection-start-line="32" selection-start-column="97" selection-end-line="32" selection-end-column="97" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Admin/Model/HomeModel.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="393">
-          <caret line="45" column="23" lean-forward="false" selection-start-line="45" selection-start-column="23" selection-end-line="45" selection-end-column="23" />
+        <state relative-caret-position="339">
+          <caret line="44" column="16" lean-forward="false" selection-start-line="44" selection-start-column="16" selection-end-line="44" selection-end-column="16" />
           <folding>
             <element signature="e#33#67#0#PHP" expanded="true" />
-            <marker date="1503513607485" expanded="true" signature="1036:1221" ph="SELECT name ho_entidad" />
-            <marker date="1503513607485" expanded="true" signature="1094:1220" ph="SELECT TABLE... TABLES" />
-            <marker date="1503513607485" expanded="true" signature="2793:2978" ph="SELECT * fro... ho_entidad" />
-            <marker date="1503513607485" expanded="true" signature="2793:3025" ph="SELECT * fro... ho_entidad" />
-            <marker date="1503513607485" expanded="true" signature="2799:2978" ph="select * fro... ho_entidad" />
-            <marker date="1503513607485" expanded="true" signature="2851:2977" ph="SELECT TABLE... TABLES" />
-            <marker date="1503513607485" expanded="true" signature="4674:4709" ph="DELETE FROM " />
-            <marker date="1503513607485" expanded="true" signature="4674:4728" ph="DELETE FROM " />
-            <marker date="1503513607485" expanded="true" signature="4890:4945" ph="INSERT INTO ho_entidad... " />
-            <marker date="1503513607485" expanded="true" signature="4890:4988" ph="INSERT INTO ho_entidad... " />
+            <marker date="1503517267997" expanded="true" signature="1036:1221" ph="SELECT name ho_entidad" />
+            <marker date="1503517267997" expanded="true" signature="1094:1220" ph="SELECT TABLE... TABLES" />
+            <marker date="1503517267997" expanded="true" signature="2778:2963" ph="SELECT * fro... ho_entidad" />
+            <marker date="1503517267997" expanded="true" signature="2778:3010" ph="SELECT * fro... ho_entidad" />
+            <marker date="1503517267997" expanded="true" signature="2784:2963" ph="select * fro... ho_entidad" />
+            <marker date="1503517267997" expanded="true" signature="2836:2962" ph="SELECT TABLE... TABLES" />
+            <marker date="1503517267997" expanded="true" signature="4659:4694" ph="DELETE FROM " />
+            <marker date="1503517267997" expanded="true" signature="4659:4713" ph="DELETE FROM " />
+            <marker date="1503517267997" expanded="true" signature="4875:4930" ph="INSERT INTO ho_entidad... " />
+            <marker date="1503517267997" expanded="true" signature="4875:4973" ph="INSERT INTO ho_entidad... " />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Admin/Controller/HomeController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="75" column="0" lean-forward="false" selection-start-line="75" selection-start-column="0" selection-end-line="75" selection-end-column="0" />
+        <state relative-caret-position="475">
+          <caret line="86" column="9" lean-forward="false" selection-start-line="86" selection-start-column="9" selection-end-line="86" selection-end-column="9" />
           <folding>
             <element signature="e#38#61#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/Complements/Console/Cache.php">
+    <entry file="file://$PROJECT_DIR$/src/Admin/Model/Relacion.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="260">
-          <caret line="32" column="97" lean-forward="false" selection-start-line="32" selection-start-column="97" selection-end-line="32" selection-end-column="97" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Admin/Templates/home/tabsCampos.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="26" column="118" lean-forward="false" selection-start-line="26" selection-start-column="118" selection-end-line="26" selection-end-column="118" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Admin/Templates/home/formTabsCampos.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="36" column="38" lean-forward="false" selection-start-line="36" selection-start-column="38" selection-end-line="36" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/jph/js/module/configCampos.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="424">
+          <caret line="75" column="53" lean-forward="true" selection-start-line="75" selection-start-column="53" selection-end-line="75" selection-end-column="53" />
           <folding />
         </state>
       </provider>
