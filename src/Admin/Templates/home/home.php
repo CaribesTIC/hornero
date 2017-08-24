@@ -8,7 +8,7 @@ Home del Sistema Hornero
         <div class="column-group ">
             <div class="all-50"><br>
                 <div class="note bottom-space">
-                   <h2>Bienvenido al Generador.</h2>
+                   <h2>Bienvenido al Generador. </h2>
                        Esta es una aplicación<p class="ink-tooltip"
                         data-tip-where="up"
                         data-tip-text="Ingeniería de Software Asistida por Computadora">

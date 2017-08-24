@@ -1,4 +1,5 @@
- <div class="column-group horizontal-gutters">
+<?php //$Commun::pp(array('a'=>111111,'b'=>22222,'c'=>3333,'d'=>111))?>
+<div class="column-group horizontal-gutters">
  	<input type="hidden" name="field" value="">
  	<!-- Prepend button -->
  	<div class="control-group all-100 small-100 tiny-100 quarter-space">
@@ -10,7 +11,7 @@
  	<!-- Prepend button -->
  	<div class="control-group all-100 small-100 tiny-100 quarter-space">
  		<div class="control prepend-button" role="fieldType">
-    		<input type="submit" value="Tipo de campo" class="ink-button">
+    		<input type="submit" value="Tipo de campo" class="ink-button ">
     		<span>
     			<select name="type[<?=$tabla?>][<?=$campo->Field?>]"  class="required valor changeType" id="typ-<?=$tabla?>-<?=$campo->Field?>">
                     <option value="default">Default Input</option>

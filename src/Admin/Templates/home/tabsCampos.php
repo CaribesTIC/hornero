@@ -10,7 +10,7 @@
                     <div class="control-group all-100 small-100 tiny-100 quarter-space">
                         <div class="control prepend-button" role="Etiqueta">
                             <input type="submit" value="Etiqueta" class="ink-button">
-                            <span><input type="text" name="label" id="lab" placeholder="Escribir la etiqueta del campo que vamos mostrar" class="required valor"></span>
+                            <span><input type="text" name="label" maxlength="60" id="lab" placeholder="Escribir la etiqueta del campo que vamos mostrar" class="required valor"></span>
                         </div>
                     </div>
                 </div>

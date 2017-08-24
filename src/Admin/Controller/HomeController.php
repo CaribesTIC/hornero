@@ -81,7 +81,7 @@ class HomeController  {
             $tmp2 = $this->home->extraerDescribe($values->entidad);
             $item2[$values->entidad] = $tmp2;
          }
-       
+
          $this->tpl->addIni();
          $this->tpl->add('select',$desc);
          $this->tpl->add('schema',$item2);

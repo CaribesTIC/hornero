@@ -26,6 +26,8 @@ class Plate extends Engine
 
                 //$templates = new \League\Plates\Engine($this->cache->get('dir_d_twig'));
                 $this->addFolder('view', Constant::DIR_SRC.APP.Constant::APP_VIEWS, true);
+
+                self::extendsFunction();
         }
         /**
          * Permite renderizar la vista e imprimir el resultado en html en vista
@@ -74,8 +76,14 @@ class Plate extends Engine
          * @return type
          */
         public function addExtends(){
-              $this->item['Commun'] = new Commun(); 
+              $this->item['Commun'] = new Commun();
               $this->item['Cache'] = new Cache();
+        }
+
+        public function  extendsFunction(){
+            /*$this->registerFunction('Cache', function ($string) {
+                return new JPH\Cache\Cache();
+            });*/
         }
 
 
