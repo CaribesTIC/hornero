@@ -26,7 +26,7 @@
     		</span>
  		</div>
  	</div>
-     <div class="control-group all-50 small-50 tiny-50 typ-<?=$tabla?>-<?=$campo->Field?>">
+    <div class="control-group all-50 small-50 tiny-50 typ-<?=$tabla?>-<?=$campo->Field?>" style="display: none">
          <div class="control prepend-button quarter-space" role="fieldType">
              <span class="ink-tooltip ink-label black "
                    data-tip-text="En primer lugar, seleccione el ID para unirse"
@@ -41,16 +41,16 @@
              </select>
          </div>
      </div>
-     <div class="control-group all-50 small-50 tiny-50 typ-<?=$tabla?>-<?=$campo->Field?>">
+     <div class="control-group all-50 small-50 tiny-50 typ-<?=$tabla?>-<?=$campo->Field?>" style="display: none">
          <div class="control prepend-button quarter-space" role="fieldType">
              <span class="ink-tooltip ink-label black "
                    data-tip-text="Luego el campo que desea en la Entidad referencial "
                    data-tip-color="black ">
                      <span class="ink-badge label">Field</span>
              </span>
-             <select name="related_name">
-                 <?php foreach ($select AS $entidad => $campos){ foreach ($campos AS $key => $campo){  ?>
-                     <option value="<?=$entidad?>|<?=$campo?>"><?=$entidad?> -> <?=$campo?></option>
+             <select name="related_name" id="<?=$tabla?>" class="related_name">
+                 <?php foreach ($select AS $entidad => $campos){ foreach ($campos AS $key => $campoItem){  ?>
+                     <option value="<?=$entidad?>|<?=$campoItem?>" id="<?=$entidad?>|<?=$campoItem?>"><?=$entidad?> -> <?=$campoItem?></option>
                  <?php } } ?>
              </select>
          </div>

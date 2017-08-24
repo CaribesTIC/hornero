@@ -59,6 +59,7 @@ class HomeController  {
      public function runConfigCampos($request)
      {
          $item = array();
+         $item2 = array();
          $desc = array();
 
 
@@ -76,14 +77,14 @@ class HomeController  {
 
          $schema=$this->home->extraerLasEntidades();
 
-         foreach ($schema as $key => $value) {
-            $tmp = $this->home->extraerDescribe($value->entidad);
-            $item[$value->entidad] = $tmp;
+         foreach ($schema as $keys => $values) {
+            $tmp2 = $this->home->extraerDescribe($values->entidad);
+            $item2[$values->entidad] = $tmp2;
          }
-
+       
          $this->tpl->addIni();
          $this->tpl->add('select',$desc);
-         $this->tpl->add('schema',$item);
+         $this->tpl->add('schema',$item2);
          $this->tpl->renders('view::home/configCampos');
     }
 }

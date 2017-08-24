@@ -72,8 +72,17 @@
          var ids = $(this).getProperty('id');
         // Leer el valor del selector
          var val = $(this).getProperty('value');
+        // Extaer la entidad seleccionada
+         var ites = ids.split('-');
          if (val === 'related') {
              $$('.'+ids).setStyle('display','block');
+             Array.each($$('.'+ids+' select option'), function(index){
+                 var item = index.value.split('|');
+                 if(ites[1]==item[0]){
+                     var x = document.getElementById(index.value);
+                     /*x.remove(x.selectedIndex);*/
+                 }
+             });
          } else {
              $$('.'+ids).setStyle('display','none');
          }
