@@ -2,15 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4d8ffa06-177e-4b97-a00d-cce7b1f23526" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/Complements/Database/ConfigDatabase.php" afterPath="$PROJECT_DIR$/lib/Complements/Database/ConfigDatabase.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/Complements/Database/ConfigDatabaseTmp.php" afterPath="$PROJECT_DIR$/lib/Complements/Database/ConfigDatabaseTmp.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Admin/Cache/AdminRouter.class.php" afterPath="$PROJECT_DIR$/src/Admin/Cache/AdminRouter.class.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Admin/Cache/AdminRouter.classTMP.php" afterPath="$PROJECT_DIR$/src/Admin/Cache/AdminRouter.classTMP.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Admin/Controller/HomeController.php" afterPath="$PROJECT_DIR$/src/Admin/Controller/HomeController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Admin/Model/HomeModel.php" afterPath="$PROJECT_DIR$/src/Admin/Model/HomeModel.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Admin/Templates/home/formTabsCampos.php" afterPath="$PROJECT_DIR$/src/Admin/Templates/home/formTabsCampos.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/jph/js/module/configCampos.js" afterPath="$PROJECT_DIR$/web/jph/js/module/configCampos.js" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -43,16 +36,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="configCampos.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Admin/Templates/home/configCampos.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="254">
-              <caret line="27" column="74" lean-forward="false" selection-start-line="27" selection-start-column="64" selection-end-line="27" selection-end-column="74" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="tabsCampos.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Admin/Templates/home/tabsCampos.php">
           <provider selected="true" editor-type-id="text-editor">
@@ -73,21 +56,44 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="configCampos.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="configCampos.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/jph/js/module/configCampos.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="424">
-              <caret line="75" column="53" lean-forward="true" selection-start-line="75" selection-start-column="53" selection-end-line="75" selection-end-column="53" />
+              <caret line="75" column="53" lean-forward="false" selection-start-line="75" selection-start-column="53" selection-end-line="75" selection-end-column="53" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="home.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Admin/Templates/home/home.php">
+      <file leaf-file-name="README" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/README">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="11" column="45" lean-forward="false" selection-start-line="11" selection-start-column="45" selection-end-line="15" selection-end-column="24" />
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="README.md" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="0">
+                <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+                <folding />
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="17">
+              <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -100,27 +106,17 @@
               <caret line="44" column="16" lean-forward="false" selection-start-line="44" selection-start-column="16" selection-end-line="44" selection-end-column="16" />
               <folding>
                 <element signature="e#33#67#0#PHP" expanded="true" />
-                <marker date="1503517267997" expanded="true" signature="1036:1221" ph="SELECT name ho_entidad" />
-                <marker date="1503517267997" expanded="true" signature="1094:1220" ph="SELECT TABLE... TABLES" />
-                <marker date="1503517267997" expanded="true" signature="2778:2963" ph="SELECT * fro... ho_entidad" />
-                <marker date="1503517267997" expanded="true" signature="2778:3010" ph="SELECT * fro... ho_entidad" />
-                <marker date="1503517267997" expanded="true" signature="2784:2963" ph="select * fro... ho_entidad" />
-                <marker date="1503517267997" expanded="true" signature="2836:2962" ph="SELECT TABLE... TABLES" />
-                <marker date="1503517267997" expanded="true" signature="4659:4694" ph="DELETE FROM " />
-                <marker date="1503517267997" expanded="true" signature="4659:4713" ph="DELETE FROM " />
-                <marker date="1503517267997" expanded="true" signature="4875:4930" ph="INSERT INTO ho_entidad... " />
-                <marker date="1503517267997" expanded="true" signature="4875:4973" ph="INSERT INTO ho_entidad... " />
+                <marker date="1503579946266" expanded="true" signature="1036:1221" ph="SELECT name ho_entidad" />
+                <marker date="1503579946266" expanded="true" signature="1094:1220" ph="SELECT TABLE... TABLES" />
+                <marker date="1503579946266" expanded="true" signature="2778:2963" ph="SELECT * fro... ho_entidad" />
+                <marker date="1503579946266" expanded="true" signature="2778:3010" ph="SELECT * fro... ho_entidad" />
+                <marker date="1503579946266" expanded="true" signature="2784:2963" ph="select * fro... ho_entidad" />
+                <marker date="1503579946266" expanded="true" signature="2836:2962" ph="SELECT TABLE... TABLES" />
+                <marker date="1503579946266" expanded="true" signature="4659:4694" ph="DELETE FROM " />
+                <marker date="1503579946266" expanded="true" signature="4659:4713" ph="DELETE FROM " />
+                <marker date="1503579946266" expanded="true" signature="4875:4930" ph="INSERT INTO ho_entidad... " />
+                <marker date="1503579946266" expanded="true" signature="4875:4973" ph="INSERT INTO ho_entidad... " />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AdminConfiguration.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Admin/Router/AdminConfiguration.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -166,7 +162,6 @@
         <option value="$PROJECT_DIR$/lib/Router/Route.php" />
         <option value="$PROJECT_DIR$/lib/Router/RouterGenerator.php" />
         <option value="$PROJECT_DIR$/lib/Complements/Database/GenerateTablesConfigs.php" />
-        <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/hornero" />
         <option value="$PROJECT_DIR$/lib/Complements/Database/Main.php" />
         <option value="$PROJECT_DIR$/lib/Complements/Database/Db.php" />
@@ -199,6 +194,7 @@
         <option value="$PROJECT_DIR$/src/Admin/Controller/HomeController.php" />
         <option value="$PROJECT_DIR$/src/Admin/Templates/home/formTabsCampos.php" />
         <option value="$PROJECT_DIR$/web/jph/js/module/configCampos.js" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -410,12 +406,12 @@
       <workItem from="1502915521461" duration="6747000" />
       <workItem from="1502973720017" duration="36481000" />
       <workItem from="1503087113450" duration="3042000" />
-      <workItem from="1503148493195" duration="66299000" />
+      <workItem from="1503148493195" duration="67133000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="112569000" />
+    <option name="totallyTimeSpent" value="113403000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -483,27 +479,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/web/jph/js/funciones.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3774">
-          <caret line="222" column="20" lean-forward="false" selection-start-line="222" selection-start-column="13" selection-end-line="222" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/Complements/Database/GenerateTablesConfigs.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="322">
-          <caret line="25" column="21" lean-forward="false" selection-start-line="25" selection-start-column="21" selection-end-line="25" selection-end-column="21" />
-          <folding>
-            <element signature="e#42#64#0#PHP" expanded="true" />
-            <marker date="1503151172375" expanded="true" signature="632:657" ph="CREATE TABLE... ho_entidad" />
-            <marker date="1503151172375" expanded="true" signature="632:683" ph="CREATE TABLE... ho_entidad" />
-            <marker date="1503151172375" expanded="true" signature="632:843" ph="CREATE TABLE... ho_entidad" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/lib/Complements/Database/GenerateConexion.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-2197">
@@ -652,14 +627,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="7" lean-forward="false" selection-start-line="1" selection-start-column="7" selection-end-line="1" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/composer.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -713,14 +680,14 @@
         <state relative-caret-position="195">
           <caret line="535" column="34" lean-forward="false" selection-start-line="535" selection-start-column="26" selection-end-line="535" selection-end-column="34" />
           <folding>
-            <marker date="1502914055705" expanded="true" signature="2539:2613" ph="INSERT INTO ${$this-&gt;tabla}... " />
-            <marker date="1502914055705" expanded="true" signature="4631:4643" ph="DELETE FROM " />
-            <marker date="1502914055705" expanded="true" signature="9587:9729" ph="SELECT (CASE... TABLES" />
-            <marker date="1502914055705" expanded="true" signature="10454:10468" ph="SELECT * FRO... ${$this-&gt;tabla}" />
-            <marker date="1502914055705" expanded="true" signature="11737:11782" ph="INSERT INTO debug... " />
-            <marker date="1502914055705" expanded="true" signature="11915:11988" ph="select isnul... seleccionfiltro" />
-            <marker date="1502914055705" expanded="true" signature="12198:12331" ph="INSERT INTO seleccionfiltro... " />
-            <marker date="1502914055705" expanded="true" signature="16148:16187" ph="SELECT * fro... TABLES" />
+            <marker date="1503579946141" expanded="true" signature="2539:2613" ph="INSERT INTO ${$this-&gt;tabla}... " />
+            <marker date="1503579946141" expanded="true" signature="4631:4643" ph="DELETE FROM " />
+            <marker date="1503579946141" expanded="true" signature="9587:9729" ph="SELECT (CASE... TABLES" />
+            <marker date="1503579946141" expanded="true" signature="10454:10468" ph="SELECT * FRO... ${$this-&gt;tabla}" />
+            <marker date="1503579946141" expanded="true" signature="11737:11782" ph="INSERT INTO debug... " />
+            <marker date="1503579946141" expanded="true" signature="11915:11988" ph="select isnul... seleccionfiltro" />
+            <marker date="1503579946141" expanded="true" signature="12198:12331" ph="INSERT INTO seleccionfiltro... " />
+            <marker date="1503579946141" expanded="true" signature="16148:16187" ph="SELECT * fro... TABLES" />
           </folding>
         </state>
       </provider>
@@ -867,16 +834,16 @@
           <caret line="44" column="16" lean-forward="false" selection-start-line="44" selection-start-column="16" selection-end-line="44" selection-end-column="16" />
           <folding>
             <element signature="e#33#67#0#PHP" expanded="true" />
-            <marker date="1503517267997" expanded="true" signature="1036:1221" ph="SELECT name ho_entidad" />
-            <marker date="1503517267997" expanded="true" signature="1094:1220" ph="SELECT TABLE... TABLES" />
-            <marker date="1503517267997" expanded="true" signature="2778:2963" ph="SELECT * fro... ho_entidad" />
-            <marker date="1503517267997" expanded="true" signature="2778:3010" ph="SELECT * fro... ho_entidad" />
-            <marker date="1503517267997" expanded="true" signature="2784:2963" ph="select * fro... ho_entidad" />
-            <marker date="1503517267997" expanded="true" signature="2836:2962" ph="SELECT TABLE... TABLES" />
-            <marker date="1503517267997" expanded="true" signature="4659:4694" ph="DELETE FROM " />
-            <marker date="1503517267997" expanded="true" signature="4659:4713" ph="DELETE FROM " />
-            <marker date="1503517267997" expanded="true" signature="4875:4930" ph="INSERT INTO ho_entidad... " />
-            <marker date="1503517267997" expanded="true" signature="4875:4973" ph="INSERT INTO ho_entidad... " />
+            <marker date="1503579946266" expanded="true" signature="1036:1221" ph="SELECT name ho_entidad" />
+            <marker date="1503579946266" expanded="true" signature="1094:1220" ph="SELECT TABLE... TABLES" />
+            <marker date="1503579946266" expanded="true" signature="2778:2963" ph="SELECT * fro... ho_entidad" />
+            <marker date="1503579946266" expanded="true" signature="2778:3010" ph="SELECT * fro... ho_entidad" />
+            <marker date="1503579946266" expanded="true" signature="2784:2963" ph="select * fro... ho_entidad" />
+            <marker date="1503579946266" expanded="true" signature="2836:2962" ph="SELECT TABLE... TABLES" />
+            <marker date="1503579946266" expanded="true" signature="4659:4694" ph="DELETE FROM " />
+            <marker date="1503579946266" expanded="true" signature="4659:4713" ph="DELETE FROM " />
+            <marker date="1503579946266" expanded="true" signature="4875:4930" ph="INSERT INTO ho_entidad... " />
+            <marker date="1503579946266" expanded="true" signature="4875:4973" ph="INSERT INTO ho_entidad... " />
           </folding>
         </state>
       </provider>
@@ -918,7 +885,34 @@
     <entry file="file://$PROJECT_DIR$/web/jph/js/module/configCampos.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="424">
-          <caret line="75" column="53" lean-forward="true" selection-start-line="75" selection-start-column="53" selection-end-line="75" selection-end-column="53" />
+          <caret line="75" column="53" lean-forward="false" selection-start-line="75" selection-start-column="53" selection-end-line="75" selection-end-column="53" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="0">
+            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
           <folding />
         </state>
       </provider>
