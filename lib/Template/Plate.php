@@ -2,8 +2,7 @@
 namespace JPH\Template;
 use \League\Plates\Engine;
 use JPH\Cache\Cache;
-use JPH\Commun\Constant;
-use JPH\Commun\Commun;
+use JPH\Commun\{Constant,Commun};
 
 /**
 * Clase encargada de procesar la parte de la vista con el sistema

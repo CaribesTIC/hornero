@@ -1,7 +1,6 @@
 <?php
 namespace JPH\Complements\Database;
-use JPH\Commun\Commun;
-use JPH\Commun\Exceptions;
+use JPH\Commun\{Commun,Exceptions};
 use JPH\Complements\Database\Query AS Query;
 /**
  * Representa un modelo generico algo similar a orm, para setiar valores campos y tablas
@@ -333,10 +332,10 @@ class Comun{
     private function validarExisteTable(){
         $a=$this->existeTable();
         if($a=='NO'){
-            
-            $msj=Exceptions::getMsjException($this->active,'app-model-vacia');
-            $obj = array('modelo'=>get_class($this),'app'=>APP,'entidad'=>$this->tabla,'entidad'=>$this->tabla,'database'=>$this->database);  
-            $msj=Commun::mergeTaps($msj,$obj);
+            $obj = array('modelo'=>get_class($this),'app'=>APP,'entidad'=>$this->tabla,'entidad'=>$this->tabla,'database'=>$this->database);
+
+            $msj=Exceptions::getMsjException($this->active,'app-model-vacia',$obj);
+
             $this->debug($msj); // {modelo} {app} {entidad} {database}
             die("\n".$msj);
         }

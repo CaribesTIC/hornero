@@ -30,18 +30,17 @@ class Route
                 //[name] => /perso [controller] => home [method] => runIndex [request] => GET|POST
                 $this->routes[] = array('objeto' => 
                                             array('name' => $route->name, 
-                                                'controller' => $route->controller, 
-                                                'method' => $route->method,
-                                                'request' => $route->request
+                                                  'controller' => $route->controller,
+                                                  'method' => $route->method,
+                                                  'request' => $route->request
                                             )
                                     );
             }
             self::constructRules($application, $this->routes);
             self::getAction($application);
-        }catch(Exception $e){
+        }catch(Throwable $t){
             header('Content-Type: text/html; charset=utf-8');
-            echo( "Excepción capturada: " . $e->getMessage());
-            die();
+            die( "Excepción capturada: " . $t->getMessage());
         }
     }
 

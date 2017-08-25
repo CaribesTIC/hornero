@@ -1,6 +1,7 @@
 <?php
 namespace JPH\Commun;
 use JPH\Complements\Console\Interprete;
+use JPH\Commun\Commun;
 
 /**
  * Clase encargada de gestionar todas las Exceptions del sistema con el objetivo de implementar
@@ -12,53 +13,24 @@ use JPH\Complements\Console\Interprete;
  * @version: 0.1
  */
 
-class Exceptions extends \Exception
+class Exceptions extends \Error implements \Throwable
 {
-        public $message;
-
-
-        public function error($capa,$code) {
-            $message=self::getMsjException($capa,$code);
-                try {
-                    try {
-                        throw new Exceptions($message);
-                    } catch (Exceptions $e) {
-                        // relanzarla
-                        throw $e;
-                    }
-                } catch (Exceptions $e) {
-                    $msj=$e->getMessage();
-                    die($msj);
-                }
+    /**
+     * Se encarga de leer los mensajes de exepciones
+     * @param string $index indice del grupo de mensaje
+     * @param string $subIndex sub indice del mensaje
+     * @param array %obj, arreglo con los datos que pasa los indice de los tab del mensaje
+     * @return string
+     */
+        public function getMsjException(string $index, string $subIndex, array $obj = array()) : string
+        {
+            $response=Interprete::getConfigMaster('exepciones',$index);
+            $msj = $response->$subIndex;
+            return Commun::mergeTaps($msj, $obj);
         }
 
-        public function setMessages($message){
-                $this->messages = $message;
-        }
 
-        public function getMMessages(){
-                return $this->messages;
-        }
 
-        public function errorMessage() {
-                $errorMsg = 'Error en la línea '
-                .$this->getLine().' en el archivo '
-                .$this->getFile() .': <b>'
-                .$this->getMessage().
-                '</b>'.self::getMMessages();
-                return $errorMsg;
-        }
-
-        /**
-         * Se encarga de leer los mensajes de exepciones
-         * @param string $index indice del grupo de mensaje
-         * @param string $subIndex sub indice del mensaje
-         * @return string
-         */
-        public function getMsjException($index,$subIndex){
-                $response=Interprete::getConfigMaster('exepciones',$index);
-                return $response->$subIndex;
-        }
 
 }
 

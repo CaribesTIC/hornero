@@ -29,6 +29,7 @@ interface Constant
     const APP_VIEWS = DIRECTORY_SEPARATOR.'Templates'; // Responce
     const APP_VHOME = DIRECTORY_SEPARATOR.'Templates/home'; // Responce
     const APP_TKEYS = DIRECTORY_SEPARATOR.'extends';
+    const PHP_VER_REQ = '7.0.0'; // Minimo
 
     // Request Methods
     const METHOD_GET     = 'GET';

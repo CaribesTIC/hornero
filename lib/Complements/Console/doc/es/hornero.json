@@ -21,8 +21,11 @@
             "app-model-vacia" : "En el modelo <b>{modelo}</b> de la aplicacion <b>{app}</b> hay un error en la definicion de la entidad <b>{entidad}</b> no existe en la base de datos <b>{database}</b>."
         },
         "Resquest": {
-            "405-1" : "405 - Method Not Allowed <br> Una petición fue hecha a una URI utilizando un método de solicitud no soportado por dicha URI; por ejemplo, cuando se utiliza GET en un formulario que requiere que los datos sean presentados vía POST, o utilizando PUT en un recurso de solo lectura.",
-            "405-2" : "405 - Method Not Allowed <br> Una petición fue hecha a una URI utilizando un método de solicitud no soportado por dicha URI; por ejemplo, cuando se utiliza POST en un formulario que requiere que los datos sean presentados vía GET, o utilizando PUT en un recurso de solo lectura."
+            "405-1" : "405 - Método no permitido <br> Una petición fue hecha a una URI utilizando un método de solicitud no soportado por dicha URI; por ejemplo, cuando se utiliza GET en un formulario que requiere que los datos sean presentados vía POST, o utilizando PUT en un recurso de solo lectura.",
+            "405-2" : "405 - Método no permitido <br> Una petición fue hecha a una URI utilizando un método de solicitud no soportado por dicha URI; por ejemplo, cuando se utiliza POST en un formulario que requiere que los datos sean presentados vía GET, o utilizando PUT en un recurso de solo lectura."
+        },
+        "Core" : {
+            "req-ver-php" : "Mi versión de PHP es :<b>{php_ver_act}</b>, es Obligatorio tener instalada y bien configurada la siguiente: <b>{php_ver_req}</b>"
         }
 
     }

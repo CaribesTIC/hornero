@@ -2,10 +2,7 @@
 namespace JPH\Core;
 use JPH\Complements;
 use JPH\Cache\Cache;
-use JPH\Commun\Constant;
-use JPH\Commun\Exceptions;
-use JPH\Commun\Commun;
-use League\Plates;
+use JPH\Commun\{Constant,Exceptions,Commun};
 use APP;
 
 /**
@@ -26,52 +23,61 @@ class Configuration extends Cache
     public $class;
     public $fold;
     public $app;
+    public $active;
 
     /**
-     * Constructur encargado de gestionar 
+     * Constructur encargado de gestionar
      */
-    public function __construct($application, $proceso) {
-        // Agregar variable global para que el cache recibe del controlador frontal
-        $this->app = Commun::upperCase($application);
-        define('APP', $this->app); 
-        parent::__construct();
-      
-        $this->file = $this->app.Commun::onlyClassActive(__CLASS__).'.php';
-        $this->class = $this->app.Commun::onlyClassActive(__CLASS__);
-        $this->fold = Constant::DIR_SRC . $this->app . '/'.Constant::APP_ROUTE.'/';
+    public function __construct($application, $proceso)
+    {
+        $this->active = 'Core';
+        try{
+            self::validateVerLoad();
+            // Agregar variable global para que el cache recibe del controlador frontal
+            $this->app = Commun::upperCase($application);
+            define('APP', $this->app);
+            parent::__construct();
 
+            $this->file = $this->app . Commun::onlyClassActive(__CLASS__) . '.php';
+            $this->class = $this->app . Commun::onlyClassActive(__CLASS__);
+            $this->fold = Constant::DIR_SRC . $this->app . '/' . Constant::APP_ROUTE . '/';
+        }
+        catch (\TypeError $t) {
+             // Muestra el mensaje que hemos customizado en Exceptions:
+             die($t->getMessage());
+        }
 
         // Read configuration variables app.ini
         $variable = self::fileConfigApp();
         unset($variable['db']);
         foreach ($variable as $strFileName) {
 
-            file_exists($strFileName) ? $objFopen = parse_ini_file($strFileName, true) : die("<strong>Uff:</strong> Se encontro el siguiente error:<ul><li> Clase: ".__CLASS__.'.<br> En el Method: '.__METHOD__.'.<br/> En la Linea: '.__LINE__.'<br/> El achivo: <b>' . $strFileName.'</b>.<br>Nota: <b>Problema de ruta del Archivo no se encuentra.</b></li><ul>');
+            file_exists($strFileName) ? $objFopen = parse_ini_file($strFileName, true) : die("<strong>Uff:</strong> Se encontro el siguiente error:<ul><li> Clase: " . __CLASS__ . '.<br> En el Method: ' . __METHOD__ . '.<br/> En la Linea: ' . __LINE__ . '<br/> El achivo: <b>' . $strFileName . '</b>.<br>Nota: <b>Problema de ruta del Archivo no se encuentra.</b></li><ul>');
 
             try {
-                if(empty($objFopen['default'])) {
+                if (empty($objFopen['default'])) {
                     // Lanza una excepción si el email no es válido
                     //throw new Exceptions()->setMessage('HOLLLLLL');
                     $exp = new Exceptions();
                     $exp->setMessages('HOLLLLLL');
                     throw $exp;
                 }
-            }
-            // Iniciamos el bloque catch
-            catch (Exceptions $e) {
+            } // Iniciamos el bloque catch
+            catch (Throwable $t) {
                 // Muestra el mensaje que hemos customizado en Exceptions:
-                echo $e->errorMessage();
+                echo $t->errorMessage();
+
             }
 
             // Check if there is a configuration file of the application module.
-            $file = Constant::DIR_SRC . $this->app . '/'.Constant::APP_ROUTE.'/' . $this->file;
-            
+            $file = Constant::DIR_SRC . $this->app . '/' . Constant::APP_ROUTE . '/' . $this->file;
+
             if (!file_exists($file)) {
                 die(sprintf('The application "%s" does not exist.', $this->app));
             }
 
             // Load the configuration values for the default block
-             //if(empty($objFopen['default'])){ throw new Exception('Los valores ingresados no son numéricos'); return 0;}
+            //if(empty($objFopen['default'])){ throw new Exception('Los valores ingresados no son numéricos'); return 0;}
             foreach ($objFopen['default'] AS $key => $value):
                 Cache::set($key, $value);
             endforeach;
@@ -83,44 +89,63 @@ class Configuration extends Cache
             endforeach;
             # code...
 
-           
+
         }
 
-        
         switch ($proceso):
             case 'stable':
                 require_once $file;
                 $loadRouter = new $this->class;
                 $loadRouter->Configure($app, $fold);
-            break;
+                break;
 
             case 'mant':
                 $commun = new CommunController();
                 $dir1 = $this->getCache('dir_m_twig');
                 $dir2 = $this->getCache('dir_d_twig');
-                $this->twig = $commun->communIniTemplate($dir1,$dir2);
+                $this->twig = $commun->communIniTemplate($dir1, $dir2);
                 echo $this->twig->render('baseMant.twig', $commun->initSendDataTwig());
-            break;
+                break;
             default:
                 Commun::modDevelopment();
                 //$this->templates = new \League\Plates\Engine(Cache::get('dir_d_twig'));
                 //$this->templates->addFolder('theme1', Cache::get('dir_s_twig'), true);
                 //require_once $file; APP\Admin\AdminConfiguration
-                $temp = '\APP\\'.$this->app.'\Router\\'.$this->class;
+                $temp = '\APP\\' . $this->app . '\Router\\' . $this->class;
                 $loadRouter = new $temp;
                 $loadRouter->initApp($this->app, $this->fold);
-            break;
+                break;
         endswitch;
     }
 
-    public static function fileConfigApp(){
+    public static function fileConfigApp()
+    {
         $variable['app'] = Constant::DIR_CONFIG . "app.ini";
         $variable['view'] = Constant::DIR_CONFIG . "view.ini";
         $variable['db'] = Constant::DIR_CONFIG . "databases.ini";
         return $variable;
     }
 
-    public function __destruct() {}
+    /**
+     * Permite validar si el sistema tiene la version de php minima requerida
+     */
+    private function validateVerLoad()
+    {
+
+
+
+            if (version_compare(PHP_VERSION, Constant::PHP_VER_REQ) <= 0) {
+                $obj = array('php_ver_act' => PHP_VERSION, 'php_ver_req' => Constant::PHP_VER_REQ);
+                $msj = Exceptions::getMsjException($this->active, 'req-ver-php',$obj);
+
+                throw new \TypeError($msj);
+            }
+
+    }
+
+    public function __destruct()
+    {
+    }
 
 }
 

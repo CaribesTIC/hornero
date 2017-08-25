@@ -1,7 +1,6 @@
 <?php
 namespace JPH\Complements\Database;
-use JPH\Commun\Exceptions;
-use JPH\Commun\Commun;
+use JPH\Commun\{Exceptions,Commun};
 
 /**
  * Clase integradora de herencia multiple de la conexion a base de datos

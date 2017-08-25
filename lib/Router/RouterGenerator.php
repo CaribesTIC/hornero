@@ -1,8 +1,6 @@
 <?php
 namespace JPH\Router;
-use JPH\Commun\Commun;
-use JPH\Commun\Constant;
-use JPH\Commun\Exceptions;
+use JPH\Commun\{Commun,Constant,Exceptions};
 use APP;
 /**
  * generate the code of the main rules for controllers

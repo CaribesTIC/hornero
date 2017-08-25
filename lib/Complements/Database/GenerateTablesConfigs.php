@@ -1,8 +1,7 @@
 <?php
 namespace JPH\Complements\Database;
-use JPH\Commun\Commun;
+use JPH\Commun\{Commun,Constant};
 use JPH\Core\Configuration;
-use JPH\Commun\Constant;
 
 /**
  * Clase encargada de crear o regenerar las entidades de config
