@@ -2,44 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4d8ffa06-177e-4b97-a00d-cce7b1f23526" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Admin/Cache/System/081759c04a72d0a417d8c5680903752a.cache" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Admin/Cache/System/081759c04a72d0a417d8c5680903752a.info" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Admin/Cache/System/1b46d43cc2697ee6a9a65872c5d168f7.cache" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Admin/Cache/System/1b46d43cc2697ee6a9a65872c5d168f7.info" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Admin/Cache/System/31e754eca8ac0f328797fe6c78c89c06.cache" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Admin/Cache/System/31e754eca8ac0f328797fe6c78c89c06.info" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Admin/Cache/System/32981a13284db7a021131df49e6cd203.cache" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Admin/Cache/System/32981a13284db7a021131df49e6cd203.info" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Admin/Cache/System/3ee321c6695bbabd671b3c2806b1abdc.cache" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Admin/Cache/System/3ee321c6695bbabd671b3c2806b1abdc.info" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Admin/Cache/System/4db8a6ac9a5de9fbafa716f488ca21f3.cache" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Admin/Cache/System/4db8a6ac9a5de9fbafa716f488ca21f3.info" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Admin/Cache/System/5ab1eae7f0854086059e130ec9113f2f.cache" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Admin/Cache/System/5ab1eae7f0854086059e130ec9113f2f.info" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Admin/Cache/System/6ed80f2aacb855f84e42a1537da2404e.cache" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Admin/Cache/System/6ed80f2aacb855f84e42a1537da2404e.info" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Admin/Cache/System/8341dbaca4f8eebb7d221f459d2487fd.cache" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Admin/Cache/System/8341dbaca4f8eebb7d221f459d2487fd.info" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Admin/Cache/System/870fe4792cd6cfb9e4991fae3e54413c.cache" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Admin/Cache/System/870fe4792cd6cfb9e4991fae3e54413c.info" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Admin/Cache/System/a0a94e4c8e3a692dfd3ff3cb44ecdb40.cache" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Admin/Cache/System/a0a94e4c8e3a692dfd3ff3cb44ecdb40.info" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Admin/Cache/System/b89862c727a3d03ace0c69a450742e42.cache" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Admin/Cache/System/b89862c727a3d03ace0c69a450742e42.info" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Admin/Cache/System/b8b123029f80e13edc3f4f60ef6748d8.cache" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Admin/Cache/System/b8b123029f80e13edc3f4f60ef6748d8.info" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Admin/Cache/System/c23beb5628139fc87b2a80b6b869b068.cache" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Admin/Cache/System/c23beb5628139fc87b2a80b6b869b068.info" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Admin/Cache/System/c4c09d1e9d3e4941c948b88c1c775ebd.cache" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Admin/Cache/System/c4c09d1e9d3e4941c948b88c1c775ebd.info" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Admin/Cache/System/c7a628cba22e28eb17b5f5c6ae2a266a.cache" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Admin/Cache/System/c7a628cba22e28eb17b5f5c6ae2a266a.info" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Admin/Cache/System/d02a42d9cb3dec9320e5f550278911c7.cache" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Admin/Cache/System/d02a42d9cb3dec9320e5f550278911c7.info" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Admin/Templates/fields/configCampos.php" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Admin/Templates/home/configCampos.php" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Admin/Templates/home/formTabsCampos.php" afterPath="$PROJECT_DIR$/src/Admin/Templates/fields/formTabsCampos.php" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Admin/Templates/home/tabsCampos.php" afterPath="$PROJECT_DIR$/src/Admin/Templates/fields/tabsCampos.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/Complements/Console/doc/es/hornero.json" afterPath="$PROJECT_DIR$/lib/Complements/Console/doc/es/hornero.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/Core/Configuration.php" afterPath="$PROJECT_DIR$/lib/Core/Configuration.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Admin/Controller/HomeController.php" afterPath="$PROJECT_DIR$/src/Admin/Controller/HomeController.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -53,120 +22,64 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Configuration.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lib/Core/Configuration.php">
+      <file leaf-file-name="HomeController.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Admin/Controller/HomeController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="359">
-              <caret line="65" column="15" lean-forward="false" selection-start-line="65" selection-start-column="15" selection-end-line="65" selection-end-column="15" />
-              <folding>
-                <element signature="e#26#46#0#PHP" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Integrate.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lib/Complements/Console/Integrate.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="424">
-              <caret line="67" column="30" lean-forward="false" selection-start-line="67" selection-start-column="30" selection-end-line="67" selection-end-column="30" />
+            <state relative-caret-position="381">
+              <caret line="87" column="55" lean-forward="false" selection-start-line="87" selection-start-column="49" selection-end-line="87" selection-end-column="55" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Command.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lib/Complements/Console/Command.php">
+      <file leaf-file-name="configCampos.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Admin/Templates/fields/configCampos.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="152">
+              <caret line="44" column="76" lean-forward="false" selection-start-line="44" selection-start-column="76" selection-end-line="44" selection-end-column="76" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Cache.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lib/Complements/Console/Cache.php">
+      <file leaf-file-name="relations.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/web/jph/js/module/relations.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="237">
-              <caret line="32" column="97" lean-forward="false" selection-start-line="32" selection-start-column="97" selection-end-line="32" selection-end-column="97" />
+            <state relative-caret-position="17">
+              <caret line="1" column="12" lean-forward="false" selection-start-line="1" selection-start-column="12" selection-end-line="1" selection-end-column="12" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Comun.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lib/Complements/Database/Comun.php">
+      <file leaf-file-name="tabsCampos.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Admin/Templates/fields/tabsCampos.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-213">
-              <caret line="336" column="81" lean-forward="false" selection-start-line="336" selection-start-column="81" selection-end-line="336" selection-end-column="81" />
-              <folding>
-                <marker date="1503675542553" expanded="true" signature="2525:2599" ph="INSERT INTO ${$this-&gt;tabla}... " />
-                <marker date="1503675542553" expanded="true" signature="4617:4629" ph="DELETE FROM " />
-                <marker date="1503675542553" expanded="true" signature="9573:9715" ph="SELECT (CASE... TABLES" />
-                <marker date="1503675542553" expanded="true" signature="10385:10399" ph="SELECT * FRO... ${$this-&gt;tabla}" />
-                <marker date="1503675542553" expanded="true" signature="11668:11713" ph="INSERT INTO debug... " />
-                <marker date="1503675542553" expanded="true" signature="11846:11919" ph="select isnul... seleccionfiltro" />
-                <marker date="1503675542553" expanded="true" signature="12129:12262" ph="INSERT INTO seleccionfiltro... " />
-                <marker date="1503675542553" expanded="true" signature="16079:16118" ph="SELECT * fro... TABLES" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Constant.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lib/Commun/Constant.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="31" column="28" lean-forward="false" selection-start-line="31" selection-start-column="28" selection-end-line="31" selection-end-column="28" />
+            <state relative-caret-position="339">
+              <caret line="26" column="53" lean-forward="false" selection-start-line="26" selection-start-column="53" selection-end-line="26" selection-end-column="53" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/.gitignore">
+      <file leaf-file-name="configRelacion.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Admin/Templates/relations/configRelacion.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="2" column="17" lean-forward="false" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
+            <state relative-caret-position="51">
+              <caret line="3" column="53" lean-forward="false" selection-start-line="3" selection-start-column="44" selection-end-line="3" selection-end-column="53" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="hornero.json" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lib/Complements/Console/doc/es/hornero.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="408">
-              <caret line="27" column="183" lean-forward="false" selection-start-line="27" selection-start-column="183" selection-end-line="27" selection-end-column="183" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="App.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lib/Complements/Console/App.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-5160">
-              <caret line="21" column="34" lean-forward="false" selection-start-line="21" selection-start-column="34" selection-end-line="21" selection-end-column="34" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Exceptions.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lib/Commun/Exceptions.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="305">
-              <caret line="21" column="61" lean-forward="false" selection-start-line="21" selection-start-column="61" selection-end-line="21" selection-end-column="61" />
-              <folding>
-                <element signature="e#28#67#0#PHP" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+      </list>
+    </option>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
@@ -185,6 +98,8 @@
       <find>enviarDatos</find>
       <find>app-model-vacia</find>
       <find>getMsjException</find>
+      <find>APP_VHOME</find>
+      <find>Campos</find>
     </findStrings>
     <dirStrings>
       <dir>C:\inetpub\wwwroot\hornero\lib</dir>
@@ -220,11 +135,9 @@
         <option value="$PROJECT_DIR$/src/Admin/View/home/home.php" />
         <option value="$PROJECT_DIR$/src/Admin/View/home/preConfig.php" />
         <option value="$PROJECT_DIR$/src/Admin/View/home/config_campos.php" />
-        <option value="$PROJECT_DIR$/src/Admin/Templates/home/configCampos.php" />
         <option value="$PROJECT_DIR$/lib/Complements/Console/Cache.php" />
         <option value="$PROJECT_DIR$/src/Admin/Model/HomeModel.php" />
         <option value="$PROJECT_DIR$/README" />
-        <option value="$PROJECT_DIR$/src/Admin/Controller/HomeController.php" />
         <option value="$PROJECT_DIR$/src/Admin/Templates/home/tabsCampos.php" />
         <option value="$PROJECT_DIR$/src/Admin/Templates/home/home.php" />
         <option value="$PROJECT_DIR$/src/Admin/Templates/home/formTabsCampos.php" />
@@ -233,7 +146,6 @@
         <option value="$PROJECT_DIR$/lib/Complements/Database/Main.php" />
         <option value="$PROJECT_DIR$/lib/Complements/Database/GenerateTablesConfigs.php" />
         <option value="$PROJECT_DIR$/composer.json" />
-        <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/lib/Router/RouterGenerator.php" />
         <option value="$PROJECT_DIR$/lib/Router/Route.php" />
         <option value="$PROJECT_DIR$/lib/Commun/Exceptions.php" />
@@ -242,6 +154,14 @@
         <option value="$PROJECT_DIR$/lib/Core/Configuration.php" />
         <option value="$PROJECT_DIR$/lib/Commun/Constant.php" />
         <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/src/Admin/Templates/home/configRelacion.php" />
+        <option value="$PROJECT_DIR$/src/Admin/Templates/home/configCampos.php" />
+        <option value="$PROJECT_DIR$/src/Admin/Controller/HomeController.php" />
+        <option value="$PROJECT_DIR$/src/Admin/Templates/fields/tabsCampos.php" />
+        <option value="$PROJECT_DIR$/src/Admin/Templates/relations/configRelacion.php" />
+        <option value="$PROJECT_DIR$/src/Admin/Templates/fields/configCampos.php" />
+        <option value="$PROJECT_DIR$/web/jph/js/module/relations.js" />
       </list>
     </option>
   </component>
@@ -301,67 +221,6 @@
               <item name="hornero" type="b2602c69:ProjectViewProjectNode" />
               <item name="hornero" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="lib" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Cache" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="hornero" type="b2602c69:ProjectViewProjectNode" />
-              <item name="hornero" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="lib" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Commun" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="hornero" type="b2602c69:ProjectViewProjectNode" />
-              <item name="hornero" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="lib" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Complements" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="hornero" type="b2602c69:ProjectViewProjectNode" />
-              <item name="hornero" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="lib" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Complements" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Console" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="hornero" type="b2602c69:ProjectViewProjectNode" />
-              <item name="hornero" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="lib" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Complements" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Console" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="doc" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="hornero" type="b2602c69:ProjectViewProjectNode" />
-              <item name="hornero" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="lib" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Complements" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Console" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="doc" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="es" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="hornero" type="b2602c69:ProjectViewProjectNode" />
-              <item name="hornero" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="lib" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Complements" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Database" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="hornero" type="b2602c69:ProjectViewProjectNode" />
-              <item name="hornero" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="lib" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Core" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="hornero" type="b2602c69:ProjectViewProjectNode" />
-              <item name="hornero" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="lib" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Router" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="hornero" type="b2602c69:ProjectViewProjectNode" />
-              <item name="hornero" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="lib" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="Template" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
@@ -380,6 +239,13 @@
               <item name="hornero" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="Admin" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Controller" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="hornero" type="b2602c69:ProjectViewProjectNode" />
+              <item name="hornero" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Admin" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="Templates" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
@@ -388,7 +254,60 @@
               <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="Admin" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="Templates" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="fields" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="hornero" type="b2602c69:ProjectViewProjectNode" />
+              <item name="hornero" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Admin" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Templates" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="home" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="hornero" type="b2602c69:ProjectViewProjectNode" />
+              <item name="hornero" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Admin" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Templates" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="relations" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="hornero" type="b2602c69:ProjectViewProjectNode" />
+              <item name="hornero" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="theme" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="hornero" type="b2602c69:ProjectViewProjectNode" />
+              <item name="hornero" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="theme" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="JPH" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="hornero" type="b2602c69:ProjectViewProjectNode" />
+              <item name="hornero" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="web" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="hornero" type="b2602c69:ProjectViewProjectNode" />
+              <item name="hornero" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="web" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="jph" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="hornero" type="b2602c69:ProjectViewProjectNode" />
+              <item name="hornero" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="web" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="jph" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="js" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="hornero" type="b2602c69:ProjectViewProjectNode" />
+              <item name="hornero" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="web" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="jph" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="js" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="module" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
           </expand>
           <select />
@@ -405,6 +324,8 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\inetpub\wwwroot\hornero\src\Admin\Templates\fields" />
+      <recent name="C:\inetpub\wwwroot\hornero\src\Admin\Templates\relations" />
       <recent name="C:\inetpub\wwwroot\hornero\theme\JPH\extends\js\module" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
@@ -448,18 +369,18 @@
       <workItem from="1502915521461" duration="6747000" />
       <workItem from="1502973720017" duration="36481000" />
       <workItem from="1503087113450" duration="3042000" />
-      <workItem from="1503148493195" duration="97312000" />
+      <workItem from="1503148493195" duration="103969000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="143582000" />
+    <option name="totallyTimeSpent" value="150239000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21255673" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23600605" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -521,62 +442,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/theme/JPH/section/header.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="561">
-          <caret line="33" column="64" lean-forward="false" selection-start-line="33" selection-start-column="64" selection-end-line="33" selection-end-column="64" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Admin/View/home/tabsCampos.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="53">
-          <caret line="4" column="66" lean-forward="false" selection-start-line="4" selection-start-column="66" selection-end-line="4" selection-end-column="66" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Admin/View/home/formTabsCampos.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-443">
-          <caret line="27" column="10" lean-forward="false" selection-start-line="27" selection-start-column="10" selection-end-line="27" selection-end-column="10" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/jph/js/combo.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/theme/JPH/base.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-477">
-          <caret line="3" column="19" lean-forward="false" selection-start-line="3" selection-start-column="19" selection-end-line="3" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Admin/View/home/home.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="229">
-          <caret line="45" column="0" lean-forward="true" selection-start-line="45" selection-start-column="0" selection-end-line="45" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/jph/js/module/preConfig.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-17">
-          <caret line="26" column="19" lean-forward="false" selection-start-line="26" selection-start-column="13" selection-end-line="26" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Admin/View/home/preConfig.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
@@ -661,36 +526,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Admin/Controller/HomeController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="186">
-          <caret line="74" column="35" lean-forward="false" selection-start-line="74" selection-start-column="35" selection-end-line="74" selection-end-column="35" />
-          <folding>
-            <element signature="e#38#61#0#PHP" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/config/app.ini">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="323">
           <caret line="19" column="8" lean-forward="false" selection-start-line="19" selection-start-column="4" selection-end-line="19" selection-end-column="10" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Admin/Templates/home/tabsCampos.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="79" lean-forward="false" selection-start-line="12" selection-start-column="79" selection-end-line="12" selection-end-column="79" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Admin/Templates/home/home.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="10" column="48" lean-forward="false" selection-start-line="10" selection-start-column="48" selection-end-line="10" selection-end-column="48" />
           <folding />
         </state>
       </provider>
@@ -703,45 +542,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Admin/Templates/home/preConfig.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-783">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Admin/Templates/home/configCampos.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="356">
-          <caret line="27" column="74" lean-forward="false" selection-start-line="27" selection-start-column="64" selection-end-line="27" selection-end-column="74" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Admin/Templates/home/formTabsCampos.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" column="73" lean-forward="false" selection-start-line="13" selection-start-column="73" selection-end-line="13" selection-end-column="73" />
-          <folding>
-            <element signature="n#style#0;n#div#2;n#div#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#div#3;n#div#0;n#!!top" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/jph/js/module/configCampos.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="407">
           <caret line="58" column="41" lean-forward="false" selection-start-line="58" selection-start-column="41" selection-end-line="58" selection-end-column="41" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/Complements/Database/Main.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="33" lean-forward="false" selection-start-line="2" selection-start-column="33" selection-end-line="2" selection-end-column="33" />
           <folding />
         </state>
       </provider>
@@ -817,27 +621,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="136">
-            <caret line="8" column="31" lean-forward="false" selection-start-line="8" selection-start-column="31" selection-end-line="8" selection-end-column="31" />
-            <folding />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/Template/Plate.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="33" lean-forward="false" selection-start-line="4" selection-start-column="33" selection-end-line="4" selection-end-column="33" />
-          <folding>
-            <element signature="e#31#57#0#PHP" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/lib/Router/RouterGenerator.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1394">
@@ -878,30 +661,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/Complements/Console/Command.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/Complements/Console/Cache.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="237">
-          <caret line="32" column="97" lean-forward="false" selection-start-line="32" selection-start-column="97" selection-end-line="32" selection-end-column="97" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/Complements/Console/App.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-5160">
-          <caret line="21" column="34" lean-forward="false" selection-start-line="21" selection-start-column="34" selection-end-line="21" selection-end-column="34" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/stubs/Core/Core_c.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-3597">
@@ -910,19 +669,28 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/Commun/Exceptions.php">
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="238">
+            <caret line="14" column="42" lean-forward="false" selection-start-line="14" selection-start-column="42" selection-end-line="14" selection-end-column="42" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="305">
-          <caret line="21" column="61" lean-forward="false" selection-start-line="21" selection-start-column="61" selection-end-line="21" selection-end-column="61" />
-          <folding>
-            <element signature="e#28#67#0#PHP" expanded="true" />
-          </folding>
+        <state relative-caret-position="34">
+          <caret line="2" column="17" lean-forward="false" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/Complements/Database/Comun.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-213">
+        <state relative-caret-position="-519">
           <caret line="336" column="81" lean-forward="false" selection-start-line="336" selection-start-column="81" selection-end-line="336" selection-end-column="81" />
           <folding>
             <marker date="1503675542553" expanded="true" signature="2525:2599" ph="INSERT INTO ${$this-&gt;tabla}... " />
@@ -937,6 +705,40 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/lib/Complements/Console/Cache.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="237">
+          <caret line="32" column="97" lean-forward="false" selection-start-line="32" selection-start-column="97" selection-end-line="32" selection-end-column="97" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/Complements/Console/Command.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/Complements/Console/App.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-5160">
+          <caret line="21" column="34" lean-forward="false" selection-start-line="21" selection-start-column="34" selection-end-line="21" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/Core/Configuration.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-304">
+          <caret line="65" column="15" lean-forward="false" selection-start-line="65" selection-start-column="15" selection-end-line="65" selection-end-column="15" />
+          <folding>
+            <element signature="e#26#46#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/lib/Complements/Console/doc/es/hornero.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="408">
@@ -945,28 +747,140 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/Core/Configuration.php">
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/config.json.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="359">
-          <caret line="65" column="15" lean-forward="false" selection-start-line="65" selection-start-column="15" selection-end-line="65" selection-end-column="15" />
+        <state relative-caret-position="425">
+          <caret line="61" column="30" lean-forward="false" selection-start-line="61" selection-start-column="13" selection-end-line="61" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/Commun/Exceptions.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="305">
+          <caret line="24" column="39" lean-forward="false" selection-start-line="24" selection-start-column="24" selection-end-line="24" selection-end-column="39" />
           <folding>
-            <element signature="e#26#46#0#PHP" expanded="true" />
+            <element signature="e#28#67#0#PHP" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/Complements/Database/Main.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-153">
+          <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/theme/JPH/base.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-491">
+          <caret line="3" column="19" lean-forward="false" selection-start-line="3" selection-start-column="19" selection-end-line="3" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/league/plates/src/Engine.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="430">
+          <caret line="276" column="38" lean-forward="false" selection-start-line="276" selection-start-column="38" selection-end-line="276" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/league/plates/src/Template/Template.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="92">
+          <caret line="136" column="20" lean-forward="false" selection-start-line="136" selection-start-column="20" selection-end-line="136" selection-end-column="20" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/Commun/Constant.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="31" column="28" lean-forward="false" selection-start-line="31" selection-start-column="28" selection-end-line="31" selection-end-column="28" />
+        <state relative-caret-position="260">
+          <caret line="29" column="19" lean-forward="false" selection-start-line="29" selection-start-column="10" selection-end-line="29" selection-end-column="19" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
+    <entry file="file://$PROJECT_DIR$/lib/Template/Plate.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="17" lean-forward="false" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
+        <state relative-caret-position="-434">
+          <caret line="36" column="32" lean-forward="false" selection-start-line="36" selection-start-column="32" selection-end-line="36" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Admin/Templates/fields/formTabsCampos.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="42">
+          <caret line="13" column="73" lean-forward="false" selection-start-line="13" selection-start-column="73" selection-end-line="13" selection-end-column="73" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Admin/Templates/home/home.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-136">
+          <caret line="10" column="48" lean-forward="false" selection-start-line="10" selection-start-column="48" selection-end-line="10" selection-end-column="48" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Admin/Templates/home/preConfig.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-797">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Admin/Controller/HomeController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="381">
+          <caret line="87" column="55" lean-forward="false" selection-start-line="87" selection-start-column="49" selection-end-line="87" selection-end-column="55" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/jph/js/module/preConfig.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="26" column="19" lean-forward="false" selection-start-line="26" selection-start-column="13" selection-end-line="26" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Admin/Templates/relations/configRelacion.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="53" lean-forward="false" selection-start-line="3" selection-start-column="44" selection-end-line="3" selection-end-column="53" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Admin/Templates/fields/tabsCampos.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="339">
+          <caret line="26" column="53" lean-forward="false" selection-start-line="26" selection-start-column="53" selection-end-line="26" selection-end-column="53" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Admin/Templates/fields/configCampos.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="44" column="76" lean-forward="false" selection-start-line="44" selection-start-column="76" selection-end-line="44" selection-end-column="76" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/jph/js/module/relations.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="12" lean-forward="false" selection-start-line="1" selection-start-column="12" selection-end-line="1" selection-end-column="12" />
           <folding />
         </state>
       </provider>

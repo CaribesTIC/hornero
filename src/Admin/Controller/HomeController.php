@@ -85,7 +85,7 @@ class HomeController  {
          $this->tpl->addIni();
          $this->tpl->add('select',$desc);
          $this->tpl->add('schema',$item2);
-         $this->tpl->renders('view::home/configCampos');
+         $this->tpl->renders('view::fields/configCampos');
     }
 }
 ?>

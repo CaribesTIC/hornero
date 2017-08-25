@@ -7,7 +7,8 @@ Desarrollo rapido y simple, sin tener que aprener tantas cosas adicionales solo 
 
 [![Autor](@gbolivarb)](https://twitter.com/gbolivarb)
 [![Desarrollo](Tag pre-alpha-02)](https://github.com/CaribesTIC/hornero/tree/pre-alpha-02)
-[![Plantilla Plates](http://platesphp.com/logo.png)](http://platesphp.com/)
+[![Plantilla Plates](https://img.shields.io/badge/source-league/plates-blue.svg?style=flat-square)](http://platesphp.com/)
+
 
 ## Table of Contents
 

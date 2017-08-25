@@ -24,7 +24,7 @@
                            <i id="iconOpen" class='fa fa-plus drag-handle push-right iconOpen'></i>
                     </div>
                     <div class="panel quarter-space" id="div_<?=$tabla?>_<?=$value->Field?>">
-                    <?php $this->insert('view::home/formTabsCampos',['tabla'=>$tabla,'campo'=>$value,'select'=>$select]) ?>
+                    <?php $this->insert('view::fields/formTabsCampos',['tabla'=>$tabla,'campo'=>$value,'select'=>$select]) ?>
                     </div>
             </div>
         <?php  }} ?>
