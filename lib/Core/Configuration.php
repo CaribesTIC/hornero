@@ -41,11 +41,7 @@ class Configuration extends Cache
             $this->file = $this->app . Commun::onlyClassActive(__CLASS__) . '.php';
             $this->class = $this->app . Commun::onlyClassActive(__CLASS__);
             $this->fold = Constant::DIR_SRC . $this->app . '/' . Constant::APP_ROUTE . '/';
-        }
-        catch (\TypeError $t) {
-             // Muestra el mensaje que hemos customizado en Exceptions:
-             die($t->getMessage());
-        }
+
 
         // Read configuration variables app.ini
         $variable = self::fileConfigApp();
@@ -54,7 +50,7 @@ class Configuration extends Cache
 
             file_exists($strFileName) ? $objFopen = parse_ini_file($strFileName, true) : die("<strong>Uff:</strong> Se encontro el siguiente error:<ul><li> Clase: " . __CLASS__ . '.<br> En el Method: ' . __METHOD__ . '.<br/> En la Linea: ' . __LINE__ . '<br/> El achivo: <b>' . $strFileName . '</b>.<br>Nota: <b>Problema de ruta del Archivo no se encuentra.</b></li><ul>');
 
-            try {
+           /* try {
                 if (empty($objFopen['default'])) {
                     // Lanza una excepción si el email no es válido
                     //throw new Exceptions()->setMessage('HOLLLLLL');
@@ -67,7 +63,7 @@ class Configuration extends Cache
                 // Muestra el mensaje que hemos customizado en Exceptions:
                 echo $t->errorMessage();
 
-            }
+            }*/
 
             // Check if there is a configuration file of the application module.
             $file = Constant::DIR_SRC . $this->app . '/' . Constant::APP_ROUTE . '/' . $this->file;
@@ -116,6 +112,11 @@ class Configuration extends Cache
                 $loadRouter->initApp($this->app, $this->fold);
                 break;
         endswitch;
+        }
+        catch (\TypeError $t) {
+            // Muestra el mensaje que hemos customizado en Exceptions:
+            die($t->getMessage());
+        }
     }
 
     public static function fileConfigApp()
@@ -131,16 +132,11 @@ class Configuration extends Cache
      */
     private function validateVerLoad()
     {
-
-
-
             if (version_compare(PHP_VERSION, Constant::PHP_VER_REQ) <= 0) {
                 $obj = array('php_ver_act' => PHP_VERSION, 'php_ver_req' => Constant::PHP_VER_REQ);
                 $msj = Exceptions::getMsjException($this->active, 'req-ver-php',$obj);
-
                 throw new \TypeError($msj);
             }
-
     }
 
     public function __destruct()
