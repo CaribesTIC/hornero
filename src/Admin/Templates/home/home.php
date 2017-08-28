@@ -18,7 +18,8 @@ Home del Sistema Hornero
                         data-tip-text="Estructura de desarrollo optmizada para aplicaciones dinamicas patrocinada por JPHLions.com">
                         <span class="ink-badge black label">Hornero</span>
                     </p>  que le permite generar código automático luego de registrar las configuraciones de los campos de cada table posteriormente se te habilita una opción para ejecutar el generador final te va a generar los  <span class="ink-badge black">modelos</span> , <span class="ink-badge black">vistas</span> y los <span class="ink-badge black">controladores</span> de tu base de dato configurada.
-                 </div> 
+
+                 </div>
 
             </div>
             <div class="all-50"><br>

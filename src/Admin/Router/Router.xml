@@ -1,11 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?> 
 <!-- Router configuration system--> 
-<route> 
-    <link> 
-        <name>/</name> 
-        <controller>home</controller> 
-        <method>runIndex</method> 
-        <request>GET</request> 
+<route>
+    <link>
+        <name>/</name>
+        <controller>home</controller>
+        <method>runIndex</method>
+        <request>GET</request>
+    </link>
+    <link>
+        <name>/login</name>
+        <controller>login</controller>
+        <method>runIndex</method>
+        <request>GET</request>
     </link>
     <link> 
         <name>/preConfig</name> 

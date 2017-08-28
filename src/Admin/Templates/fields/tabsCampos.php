@@ -5,8 +5,8 @@
                 <span class="push-left">&nbsp;Configuración de la entidad <b><?php echo $tabla?></b></span>
                 <i id="iconOpen" class='fa fa-plus drag-handle push-right iconOpen'></i>
             </div>
-            <div class="panel quarter-space" id="div_<?=$tabla?>_registro">
-                <div class="column-group horizontal-gutters">
+            <div class="panel quarter-space" id="div_<?=$tabla?>_registro" style=" display: none;">
+                <div class="column-group horizontal-gutters"  >
                     <div class="control-group all-100 small-100 tiny-100 quarter-space">
                         <div class="control prepend-button" role="Etiqueta">
                             <input type="submit" value="Etiqueta" class="ink-button">
@@ -23,7 +23,7 @@
                            <span class="push-left">&nbsp;<?=$value->Field?></span>
                            <i id="iconOpen" class='fa fa-plus drag-handle push-right iconOpen'></i>
                     </div>
-                    <div class="panel quarter-space" id="div_<?=$tabla?>_<?=$value->Field?>">
+                    <div class="panel quarter-space" id="div_<?=$tabla?>_<?=$value->Field?>"  style=" display: none;">
                     <?php $this->insert('view::fields/formTabsCampos',['tabla'=>$tabla,'campo'=>$value,'select'=>$select]) ?>
                     </div>
             </div>

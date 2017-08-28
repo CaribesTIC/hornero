@@ -8,8 +8,9 @@ use JPH\Commun\Commun;
  * Permite integrar un conjunto de funcionalidades de la consola pero en las aplicaciones
  * @Author: Gregorio Bolívar <elalconxvii@gmail.com>
  * @Author: Blog: <http://gbbolivar.wordpress.com>
- * @Creation Date: 09/08/2017
- * @version: 4.1
+ * @created Date: 09/08/2017
+ * @updated Date: 29/08/2017
+ * @version: 4.8
  */
 
 
@@ -21,7 +22,8 @@ class App extends Exceptions
         // Constante de la clase
         const SUBITEM = __CLASS__;
 
-        public function __construct(){
+        public function __construct()
+        {
                 $this->pathapp = Constant::DIR_SRC;
                 $this->active = Commun::onlyClassActive(App::SUBITEM);
 
@@ -31,7 +33,7 @@ class App extends Exceptions
          * @param string $name nombre de la aplicacion que se desea crear en el momento
          * @return string mensaje de respuesta
          */
-        public function createStructura($name) 
+        public function createStructura($name)
         {
                 $app = Commun::upperCase($name);
                 $active = Commun::onlyClassActive(App::SUBITEM);
@@ -56,26 +58,29 @@ class App extends Exceptions
                 return $msj;
         }
 
-     
+
         /**
          * Perite crear el directorio donde se almacenara el cache de la aplicacion creada
          * @return boolean
          */
-        private function createDirCache($ruta){
+        private function createDirCache($ruta)
+        {
                 Commun::mkddir($ruta.Constant::APP_CACHE);
         }
         /**
          * Permite crear el directorio donde se almacenara los controladores de la aplicacion
          * @return boolean
          */
-        private function createDirController($ruta){
+        private function createDirController($ruta)
+        {
                 Commun::mkddir($ruta.Constant::APP_CONTR);
         }
         /**
-         * Permite crear el directorio del model de la aplicacion que se esta creando 
+         * Permite crear el directorio del model de la aplicacion que se esta creando
          * @return boolean
          */
-        private function createDirModelo($ruta){
+        private function createDirModelo($ruta)
+        {
                 Commun::mkddir($ruta.Constant::APP_MODEL);
         }
 
@@ -84,16 +89,18 @@ class App extends Exceptions
          * Permote crear el direcrorio donde se almacenaran las vista de la aplicacion
          * @return boolean
          */
-        private function createDirView($ruta){
+        private function createDirView($ruta)
+        {
                 Commun::mkddir($ruta.Constant::APP_VIEWS);
                 Commun::mkddir($ruta.Constant::APP_VHOME);
         }
 
         /**
-         * Permite crear el directorio del model de la aplicacion que se esta creando 
+         * Permite crear el directorio del model de la aplicacion que se esta creando
          * @return boolean
          */
-        private function createDirRouter($ruta){
+        private function createDirRouter($ruta)
+        {
                 Commun::mkddir($ruta.Constant::APP_ROUTE);
         }
 
@@ -106,12 +113,12 @@ class App extends Exceptions
         {
             $this->app = Commun::upperCase($app);
             $ruta = $this->pathapp.$app.Constant::APP_MODEL;
-            
+
             // Permite valirar si existe la app donde va el modelo
             if (!file_exists($ruta)) {
                 die(sprintf('The application "%s" does not exist.', $this->app));
             }else{
-                $modelo = Commun::upperCase($modelo); 
+                $modelo = Commun::upperCase($modelo);
                 $ruta =  $ruta.DIRECTORY_SEPARATOR.$modelo.'.php';
                 if (file_exists($ruta)) {
                     $msj=Interprete::getMsjConsole($this->active,'app:model-existe');
@@ -124,6 +131,36 @@ class App extends Exceptions
             }
             return $msj;
         }
+
+    /**
+     * Permite gestionar las clases controller del sistema en la aplicacion
+     * @param string $app, Aplicacion que deberia estar creada donde se montara el model
+     * @param string $controller, Nombre del controller que se generá en el sistema
+     */
+    public function createStructuraFileController($app, $controller)
+    {
+        $this->app = Commun::upperCase($app);
+        $ruta = $this->pathapp.$app.Constant::APP_CONTR;
+
+        // Permite valirar si existe la app donde va el controller
+        if (!file_exists($ruta)) {
+            die(sprintf('The application "%s" does not exist.', $this->app));
+        }else{
+            $controller = Commun::upperCase($controller);
+            $ruta =  $ruta.DIRECTORY_SEPARATOR.$controller.'.php';
+            if (file_exists($ruta)) {
+                $msj=Interprete::getMsjConsole($this->active,'app:controller-existe');
+            }else{
+                // Crear elementos
+                //createFileReadController($ruta, $app , $controller = 'Home')
+                $ruta = $this->pathapp.$app;
+                self::createFileReadController($ruta,$app,$controller);
+                $msj=Interprete::getMsjConsole($this->active,'app:controller-create');
+            }
+            $msj=Commun::mergeTaps($msj,array('app'=>$this->app,'controller'=>$controller));
+        }
+        return $msj;
+    }
 
         /**
          * Permite listar las aplicaciones que se encuentran creadas en e sistema
@@ -152,7 +189,8 @@ class App extends Exceptions
          * @param string $ruta, ruta donde esta el xml
          * @param string $app, aplicacion que levanta los datos
          */
-        private function createFileReadRouter($ruta, $app){
+        private function createFileReadRouter(string $ruta, string $app)
+        {
                 
             $ar = fopen($ruta.Constant::APP_ROUTE.DIRECTORY_SEPARATOR.$app."Configuration.php", "w+") or die("Problemas en la creaci&oacute;n del router del apps " . $app);
             // Inicio la escritura en el activo
@@ -199,7 +237,8 @@ class App extends Exceptions
             fclose($ar);
         }
 
-        private function createFileRouter($ruta, $app){
+        private function createFileRouter(string $ruta, string $app)
+        {
             $ar = fopen($ruta.Constant::APP_ROUTE.DIRECTORY_SEPARATOR."Router.xml", "w+") or die("Problemas en la creaci&oacute;n del router del apps Router.xml");
             // Inicio la escritura en el activo
             fputs($ar, '<?xml version="1.0" encoding="UTF-8"?>');
@@ -229,10 +268,12 @@ class App extends Exceptions
          * Permite crear una plantilla archivo encargado de procesar el controller
          * @param string $ruta, ruta donde esta el xml
          * @param string $app, aplicacion que levanta los datos
+         * @param string $controller, controller que se creara en el momento
          */
-        private function createFileReadController($ruta, $app){
+        private function createFileReadController(string $ruta, string $app , string $controller = 'Home')
+        {
 
-            $ar = fopen($ruta.Constant::APP_CONTR.DIRECTORY_SEPARATOR."HomeController.php", "w+") or die("Problemas en la creaci&oacute;n del router del apps " . $app);
+            $ar = fopen($ruta.Constant::APP_CONTR.DIRECTORY_SEPARATOR."".$controller."Controller.php", "w+") or die("Problemas en la creaci&oacute;n del controlador del apps " . $app);
             // Inicio la escritura en el activo
             fputs($ar, '<?php');
             fputs($ar, "\n");
@@ -256,7 +297,7 @@ class App extends Exceptions
             fputs($ar, "\n");
             fputs($ar, ' */ ');
             fputs($ar, "\n");
-            fputs($ar, 'class HomeController');
+            fputs($ar, 'class '.$controller.'Controller');
             fputs($ar, "{");
             fputs($ar, " \n");
             fputs($ar, '   public $tpl;');   
@@ -337,7 +378,8 @@ class App extends Exceptions
 
         }
 
-        private function createFileViewHome($ruta, $app){
+        private function createFileViewHome($ruta, $app)
+        {
                 $ar = fopen($ruta.Constant::APP_VHOME.DIRECTORY_SEPARATOR."inicio.php", "w+") or die("Problemas en la creaci&oacute;n del view inicio.php");
                 // Inicio la escritura en el activo
                 fputs($ar, '<?php');

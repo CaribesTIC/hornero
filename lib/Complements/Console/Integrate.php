@@ -48,6 +48,12 @@ class Integrate
                     $vist = $model->createStructuraFileModel($argv[2],$argv[3]);
                     $inpre->setValor(base64_encode($vist));
                 }
+                elseif ($v==4 AND $argv[1]=='app:controller')
+                {
+                    $model = new App();
+                    $vist = $model->createStructuraFileController($argv[2],$argv[3]);
+                    $inpre->setValor(base64_encode($vist));
+                }
                 elseif ($v==2 AND $argv[1]=='app:list')
                 {
                     $list = new App();

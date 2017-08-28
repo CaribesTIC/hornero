@@ -20,7 +20,7 @@ class Commun
      * ejemplo:JPH\Complement\Console\App, busca solo el nombre de la clase
      * @return string $name, devuelve el nombre de la clase activa.
      */
-    static function onlyClassActive($classNamespace)
+    static function onlyClassActive(string $classNamespace):string
     {
         $obj = explode('\\', $classNamespace);
         $name = end($obj);
@@ -32,7 +32,7 @@ class Commun
      * @param string $ruta, ruta donde procesara la creacion del directorio 
      * @return boolean
      */
-    static function mkddir($ruta)
+    static function mkddir(string $ruta): boolean
     {
         if (!file_exists($ruta)) 
         {
@@ -49,7 +49,7 @@ class Commun
      * @param array $dataArray, parametro de entrada para ser impreso 
      * @return imprimir valores
      */
-    static function pp($dataArray)
+    static function pp(array $dataArray)
     {
         echo "<pre>"; print_r($dataArray); die();
     }
@@ -69,7 +69,7 @@ class Commun
      * @param string $texto, lo que deseas cambiar de formato
      * @return string $came, texto formateado
      */
-    static function cameCase($texto)
+    static function cameCase(string $texto): string
     {
         $tmp = explode(' ',$texto);
         $res = '';
@@ -99,7 +99,7 @@ class Commun
      * @param string $texto, lo que deseas cambiar de formato
      * @return string $valor;
      */
-    static function upperCase($texto)
+    static function upperCase(string $texto): string
     {
         $tmp = explode(' ',$texto);
         $res = '';
@@ -134,7 +134,7 @@ class Commun
    /**
     * 
     */
-   static function compressResponse($html)
+   static function compressResponse(string $html): string
     {
         $search = array('/\>[^\S ]+/s','/[^\S ]+\</s','/(\s)+/s','[\n|\r|\n\r|\t|\0|\x0B]');
         $replace = array('>','<','\\1');
@@ -144,7 +144,7 @@ class Commun
    /**
     * 
     */
-   static function sanear_string($string)
+   static function sanear_string(string $string):string
    {
     $string = trim($string);
     $string = str_replace(
@@ -234,7 +234,7 @@ class Commun
      * @param array $options, Valores del arreglo a cambiar
      * @return string $result, cadena de texto con los datos reales 
      */
-    static function  mergeTaps($string,$option)
+    static function  mergeTaps(string $string,array $option): string
     {
        
         $tmp = array(); 
@@ -253,7 +253,7 @@ class Commun
      * @param string $carpeta, ruta donde esta la carpeta a eliminar
      * @author http://aprendizdealquimia.es/blog/?p=231
     */
-    function eliminarDir($carpeta)
+    function eliminarDir(string $carpeta)
     {
         foreach(glob($carpeta . "/*") as $archivos_carpeta)
         {
